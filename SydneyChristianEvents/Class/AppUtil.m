@@ -14,13 +14,10 @@
 
 
 /**
- *******************************************************************************
- 
  Given "comments" field, which is from the server and look something like
  "1363386600 to 1363413600", convert to NSDate's.
 
  Sometimes there is only one number, in that case convert only one.
-
  */
 + (NSMutableArray *) convertCommentsFieldToDates: (NSString *) comments
 {
@@ -61,9 +58,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 + (NSDate *) convertTimestampToDate: (NSString *) timestamp
 {
 
@@ -76,9 +70,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 + (BOOL) areDatesEqualDate1: (NSDate *) date1
                       date2: (NSDate *) date2
 {
@@ -101,9 +92,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 + (NSString *) convertToStringStartDate: (NSDate *) fromDate
                                  toDate: (NSDate *) toDate
 {
@@ -193,9 +181,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 + (int) getBlogIdFromLink: (NSString *) rssLink
 {
     

@@ -1,9 +1,9 @@
 //
 //  ActivityIndicatorOverlayVC.m
-//  Next Station HA
+//  SydneyChristianEvents
 //
 //  Created by Daniel Lam on 22/04/12.
-//  Copyright (c) 2012 Rockable Apps. All rights reserved.
+//  Copyright (c) 2012 Lamophone. All rights reserved.
 //
 
 #import "ActivityIndicatorOverlayVC.h"
@@ -15,9 +15,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 -(id)initWithFrame:(CGRect) inputFrame {
 
     //NSLog(@"ActivityIndicatorOverlayVC.m: init(): called.");
@@ -39,9 +36,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -57,7 +51,8 @@
 
 
 /**
- *******************************************************************************
+ loadView() is called by system whenever the view property is requested and is null.
+ This function should be overriden if the view hierarchy is to be created programmatically, without using a nib.
  */
 - (void) loadView
 {
@@ -159,9 +154,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 -(void)viewWillAppear:(BOOL) animated {
 
     [super viewWillAppear:animated];
@@ -176,9 +168,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 -(void)viewWillDisappear:(BOOL) animated {
 
     [super viewWillDisappear:animated];
@@ -189,10 +178,8 @@
 
 
 /**
- *******************************************************************************
- * viewDidLoad() is not overridden because the view hierarchy has been loaded
- * programmatically using loadView(). viewDidLoad() is typically used to
- * do more setup after views are created, typically after loading NIB file.
+ viewDidLoad() is not overridden because the view hierarchy has been loaded programmatically using loadView(). 
+ viewDidLoad() is typically used to do more setup after views are created, typically after loading NIB file.
  */
 //- (void)viewDidLoad
 //{
@@ -201,9 +188,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -214,9 +198,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (BOOL)shouldAutorotateToInterfaceOrientation:
 (UIInterfaceOrientation)interfaceOrientation
 {

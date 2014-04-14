@@ -16,9 +16,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -35,10 +32,6 @@
 
 
 
-
-/**
- *******************************************************************************
- */
 - (void)viewDidLoad
 {
 
@@ -88,9 +81,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -103,9 +93,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (NSString *)    tableView: (UITableView *)tableView
     titleForHeaderInSection: (NSInteger)section
 {
@@ -116,9 +103,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 
@@ -131,9 +115,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
@@ -145,9 +126,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (UITableViewCell *)tableView: (UITableView *)tableView
          cellForRowAtIndexPath: (NSIndexPath *)indexPath
 {
@@ -259,9 +237,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 

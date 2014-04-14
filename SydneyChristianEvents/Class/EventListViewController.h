@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  EventListViewController.h
 //  SydneyChristianEvents
 //
 //  Created by Daniel Lam on 6/05/13.
@@ -13,28 +13,20 @@
 
 
 
-/*
+/**
  
- This is the main screen for the app.
+ Main screen of the app.
  
- Functionalities include:
-
  - Show the events in a list format using table view.
- - Send request to web server receive event details in RSS format.
+ - Send request to web server to receive event details in RSS format.
  - Parse received RSS entries and save to persistent storage using Core Data.
-
- 
- Notes:
-
  - Layout is set up using Storyboard.
- 
  */
-@interface ViewController : UIViewController <
+@interface EventListViewController : UIViewController <
     UITableViewDelegate,
     UITableViewDataSource,
     NSXMLParserDelegate
 >
-
 
 @property (strong) NSMutableString *rssTitle;
 @property (strong) NSMutableString *rssLink;

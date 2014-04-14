@@ -17,7 +17,7 @@
 		6498AFB1173CEF00008E4D18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6498AFA7173CEA65008E4D18 /* AppDelegate.m */; };
 		6498AFB2173CEF11008E4D18 /* ActivityIndicatorOverlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6498AFA9173CEAC2008E4D18 /* ActivityIndicatorOverlayVC.m */; };
 		6498AFB3173CEF1D008E4D18 /* EventEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6498AFA3173CE9D1008E4D18 /* EventEntry.m */; };
-		6498AFB4173CEF26008E4D18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6498AFA5173CEA59008E4D18 /* ViewController.m */; };
+		6498AFB4173CEF26008E4D18 /* EventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6498AFA5173CEA59008E4D18 /* EventListViewController.m */; };
 		6498AFB8173D0894008E4D18 /* EventDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6498AFB7173D0893008E4D18 /* EventDetailsVC.m */; };
 		6498AFBB173DFB38008E4D18 /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6498AFBA173DFB38008E4D18 /* CategoryVC.m */; };
 		6498AFBD173E567F008E4D18 /* PreferenceDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6498AFBC173E567F008E4D18 /* PreferenceDefaults.plist */; };
@@ -30,6 +30,8 @@
 		64DCC829173713B300964C3A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DCC827173713B300964C3A /* MainStoryboard.storyboard */; };
 		64DCC833173B7EE400964C3A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DCC832173B7EE400964C3A /* CoreData.framework */; };
 		64DCC836173B7F1700964C3A /* EventEntry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64DCC834173B7F1700964C3A /* EventEntry.xcdatamodeld */; };
+		AB4DCE9118FBD61C008BA0F7 /* Design.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4DCE9018FBD61C008BA0F7 /* Design.md */; };
+		ABA0FCDF18FBCF500034E220 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABA0FCDE18FBCF500034E220 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +43,8 @@
 		6498AFA0173BCCE9008E4D18 /* AppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppUtil.m; path = Class/AppUtil.m; sourceTree = "<group>"; };
 		6498AFA2173CE9D1008E4D18 /* EventEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EventEntry.h; path = Class/EventEntry.h; sourceTree = "<group>"; };
 		6498AFA3173CE9D1008E4D18 /* EventEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EventEntry.m; path = Class/EventEntry.m; sourceTree = "<group>"; };
-		6498AFA4173CEA59008E4D18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Class/ViewController.h; sourceTree = "<group>"; };
-		6498AFA5173CEA59008E4D18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Class/ViewController.m; sourceTree = "<group>"; };
+		6498AFA4173CEA59008E4D18 /* EventListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EventListViewController.h; path = Class/EventListViewController.h; sourceTree = "<group>"; };
+		6498AFA5173CEA59008E4D18 /* EventListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EventListViewController.m; path = Class/EventListViewController.m; sourceTree = "<group>"; };
 		6498AFA6173CEA64008E4D18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Class/AppDelegate.h; sourceTree = "<group>"; };
 		6498AFA7173CEA65008E4D18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Class/AppDelegate.m; sourceTree = "<group>"; };
 		6498AFA8173CEAC2008E4D18 /* ActivityIndicatorOverlayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActivityIndicatorOverlayVC.h; path = Class/ActivityIndicatorOverlayVC.h; sourceTree = "<group>"; };
@@ -67,6 +69,8 @@
 		64DCC828173713B300964C3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		64DCC832173B7EE400964C3A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		64DCC835173B7F1700964C3A /* EventEntry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventEntry.xcdatamodel; sourceTree = "<group>"; };
+		AB4DCE9018FBD61C008BA0F7 /* Design.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Design.md; path = Documentation/Design.md; sourceTree = "<group>"; };
+		ABA0FCDE18FBCF500034E220 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 		64DCC803173713B300964C3A = {
 			isa = PBXGroup;
 			children = (
+				ABA0FCDE18FBCF500034E220 /* README.md */,
 				64DCC815173713B300964C3A /* SydneyChristianEvents */,
+				AB4DCE9218FBD623008BA0F7 /* Documentation */,
 				64DCC80E173713B300964C3A /* Frameworks */,
 				64DCC80D173713B300964C3A /* Products */,
 			);
@@ -127,8 +133,10 @@
 		64DCC815173713B300964C3A /* SydneyChristianEvents */ = {
 			isa = PBXGroup;
 			children = (
-				6498AFAA173CEAE9008E4D18 /* Images */,
+				6498AFA6173CEA64008E4D18 /* AppDelegate.h */,
+				6498AFA7173CEA65008E4D18 /* AppDelegate.m */,
 				64DCC83A173B82F400964C3A /* Class */,
+				6498AFAA173CEAE9008E4D18 /* Images */,
 				64DCC816173713B300964C3A /* Supporting Files */,
 			);
 			path = SydneyChristianEvents;
@@ -152,24 +160,46 @@
 		64DCC83A173B82F400964C3A /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				6498AFB9173DFB38008E4D18 /* CategoryVC.h */,
-				6498AFBA173DFB38008E4D18 /* CategoryVC.m */,
-				6498AF9F173BCCE9008E4D18 /* AppUtil.h */,
-				6498AFA0173BCCE9008E4D18 /* AppUtil.m */,
-				6498AFA8173CEAC2008E4D18 /* ActivityIndicatorOverlayVC.h */,
-				6498AFA9173CEAC2008E4D18 /* ActivityIndicatorOverlayVC.m */,
-				6498AFA2173CE9D1008E4D18 /* EventEntry.h */,
-				6498AFA3173CE9D1008E4D18 /* EventEntry.m */,
-				6498AFA6173CEA64008E4D18 /* AppDelegate.h */,
-				6498AFA7173CEA65008E4D18 /* AppDelegate.m */,
-				6498AFA4173CEA59008E4D18 /* ViewController.h */,
-				6498AFA5173CEA59008E4D18 /* ViewController.m */,
+				ABA0FCE118FBD43C0034E220 /* Util */,
+				ABA0FCE018FBD4230034E220 /* CoreData */,
+				6498AFA4173CEA59008E4D18 /* EventListViewController.h */,
+				6498AFA5173CEA59008E4D18 /* EventListViewController.m */,
 				6498AF9C173BC389008E4D18 /* EventEntryCell.h */,
 				6498AF9D173BC389008E4D18 /* EventEntryCell.m */,
 				6498AFB6173D0893008E4D18 /* EventDetailsVC.h */,
 				6498AFB7173D0893008E4D18 /* EventDetailsVC.m */,
+				6498AFB9173DFB38008E4D18 /* CategoryVC.h */,
+				6498AFBA173DFB38008E4D18 /* CategoryVC.m */,
 			);
 			name = Class;
+			sourceTree = "<group>";
+		};
+		AB4DCE9218FBD623008BA0F7 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				AB4DCE9018FBD61C008BA0F7 /* Design.md */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		ABA0FCE018FBD4230034E220 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6498AFA2173CE9D1008E4D18 /* EventEntry.h */,
+				6498AFA3173CE9D1008E4D18 /* EventEntry.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		ABA0FCE118FBD43C0034E220 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6498AFA8173CEAC2008E4D18 /* ActivityIndicatorOverlayVC.h */,
+				6498AFA9173CEAC2008E4D18 /* ActivityIndicatorOverlayVC.m */,
+				6498AF9F173BCCE9008E4D18 /* AppUtil.h */,
+				6498AFA0173BCCE9008E4D18 /* AppUtil.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,12 +255,14 @@
 			files = (
 				64DCC81A173713B300964C3A /* InfoPlist.strings in Resources */,
 				64DCC829173713B300964C3A /* MainStoryboard.storyboard in Resources */,
+				ABA0FCDF18FBCF500034E220 /* README.md in Resources */,
 				6498AFAE173CEB02008E4D18 /* Default-568h@2x.png in Resources */,
 				6498AFAF173CEB02008E4D18 /* Default.png in Resources */,
 				6498AFB0173CEB02008E4D18 /* Default@2x.png in Resources */,
 				6498AFBD173E567F008E4D18 /* PreferenceDefaults.plist in Resources */,
 				649A0A7C1740413300C7972F /* event_details.html in Resources */,
 				6475C1491745DC9D002ED7E6 /* eventapp-icon.png in Resources */,
+				AB4DCE9118FBD61C008BA0F7 /* Design.md in Resources */,
 				6475C14B1745DCA5002ED7E6 /* eventapp-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +281,7 @@
 				6498AFB1173CEF00008E4D18 /* AppDelegate.m in Sources */,
 				6498AFB2173CEF11008E4D18 /* ActivityIndicatorOverlayVC.m in Sources */,
 				6498AFB3173CEF1D008E4D18 /* EventEntry.m in Sources */,
-				6498AFB4173CEF26008E4D18 /* ViewController.m in Sources */,
+				6498AFB4173CEF26008E4D18 /* EventListViewController.m in Sources */,
 				6498AFB8173D0894008E4D18 /* EventDetailsVC.m in Sources */,
 				6498AFBB173DFB38008E4D18 /* CategoryVC.m in Sources */,
 			);

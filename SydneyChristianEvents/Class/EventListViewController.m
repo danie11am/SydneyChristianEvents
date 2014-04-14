@@ -1,12 +1,12 @@
 //
-//  ViewController.m
+//  EventListViewController.m
 //  SydneyChristianEvents
 //
 //  Created by Daniel Lam on 6/05/13.
 //  Copyright (c) 2013 Lamophone. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "EventListViewController.h"
 #import "EventDetailsVC.h"
 #import "EventEntry.h"
 #import "EventEntryCell.h"
@@ -14,17 +14,14 @@
 #import "ActivityIndicatorOverlayVC.h"
 
 
-@interface ViewController ()
+@interface EventListViewController ()
 
 @end
 
 
-@implementation ViewController
+@implementation EventListViewController
 
 
-/**
- *******************************************************************************
- */
 - (void)viewDidLoad
 {
 
@@ -33,36 +30,27 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
 
-    // Use a flag in UserDefaults to determine if app is run for the
-    // first time. If it is, download the RSS file to get event entries.
-    //
+    // Use a flag in UserDefaults to determine if app is run for the first time.
+    // If it is, download the RSS file to get event entries.
     int isFirstRun =
     [[NSUserDefaults standardUserDefaults] integerForKey: @"isFirstRun"];
     
     if (isFirstRun == 0)
     {
-
         [[NSUserDefaults standardUserDefaults] setInteger: 1
                                                    forKey: @"isFirstRun"
          ];
 
-
         // Make the change effective immediately.
-        //
         [[NSUserDefaults standardUserDefaults] synchronize];
 
-
         [self refreshRSS];
-        
     }
     
 }
 
 
 
-/**
- *******************************************************************************
- */
 - (void)viewWillAppear:(BOOL)animated
 {
     // Debugging.
@@ -91,9 +79,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -103,8 +88,6 @@
 
 
 /**
- *******************************************************************************
- *
  * This is automatically called when a "segue" is triggered.
  *
  * "Segue" means transition to other view controllers and is configured 
@@ -144,9 +127,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void) parseXMLFileAtURL: (NSString *) inputURL
 {
 
@@ -198,9 +178,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (IBAction) refreshRSS
 {
 
@@ -246,9 +223,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void) fetchDatabase
 {
     
@@ -416,9 +390,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (BOOL) doesEventAlreadyExist: (int) eventId
 {
 
@@ -533,9 +504,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void) hideLoadingSign
 {
 
@@ -545,9 +513,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void) showLoadingSign
 {
     
@@ -606,7 +571,6 @@
 
 
 /**
- *******************************************************************************
  Returns the managed object model for the application.
  If the model doesn't already exist, it is created by merging all of the models
  found in the application bundle.
@@ -627,7 +591,6 @@
 
 
 /**
- *******************************************************************************
  Returns the persistent store coordinator for the application.
  If the coordinator doesn't already exist, it is created and the application's
  store added to it.
@@ -682,9 +645,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (NSInteger) numberOfSectionsInTableView: (UITableView *)tableView
 {
     // Return the number of sections.
@@ -693,9 +653,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
@@ -704,9 +661,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (UITableViewCell *)tableView: (UITableView *)tableView
          cellForRowAtIndexPath: (NSIndexPath *)indexPath
 {
@@ -754,9 +708,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)parserDidStartDocument:(NSXMLParser *)parser
 {
     
@@ -768,9 +719,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)        parser:(NSXMLParser *)parser
     parseErrorOccurred:(NSError *)parseError
 {
@@ -812,9 +760,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)        parser:(NSXMLParser *)parser
     validationErrorOccurred:(NSError *)validationError
 {
@@ -832,9 +777,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)    parser:(NSXMLParser *)parser
    didStartElement:(NSString *) elementName
       namespaceURI:(NSString *) namespaceURI
@@ -891,9 +833,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)    parser:(NSXMLParser *)parser
      didEndElement:(NSString *)elementName
       namespaceURI:(NSString *)namespaceURI
@@ -1146,9 +1085,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)     parser:(NSXMLParser *)parser
     foundCharacters:(NSString *)string
 {
@@ -1313,9 +1249,6 @@
 
 
 
-/**
- *******************************************************************************
- */
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
 

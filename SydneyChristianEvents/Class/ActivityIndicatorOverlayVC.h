@@ -1,28 +1,19 @@
 //
 //  ActivityIndicatorOverlayVC.h
-//  Next Station HA
+//  SydneyChristianEvents
 //
 //  Created by Daniel Lam on 22/04/12.
-//  Copyright (c) 2012 Rockable Apps. All rights reserved.
+//  Copyright (c) 2012 Lamophone. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 
-/*******************************************************************************
- * CLASS DEFINITION
- *******************************************************************************
- */
-
 /**
- *
+ Shows an Actvity Indicator to appear as an overlay on top of current view.
  
- ActivityIndicatorOverlayVC allows an Actvity Indicator to appear as an 
- overlay on top of current view.
- 
- This class is based on a reference from:
+ This class is based on:
  http://www.markbetz.net/2010/09/30/ios-diary-showing-an-activity-spinner-over-a-uitableview/
- 
  */
 @interface ActivityIndicatorOverlayVC : UIViewController {
     
@@ -37,39 +28,9 @@
 
 
 
-/*******************************************************************************
- * METHOD DECLARATIONS
- *******************************************************************************
- */
-
-
-/**
- *******************************************************************************
- *
- * @param inputFrame 
- *
- * @return id A reference to this object itself.
- */
-- (id)initWithFrame: (CGRect) inputFrame;
-
-
-
-/**
- *******************************************************************************
- *
- * loadView() is called by system whenever the view property is requested 
- * and is null.
- *
- * This function should be overriden if the view hierarchy is to be created 
- * programmatically, without using a nib.
- *
- * @return void.
- */
-- (void)loadView;
+-(id)initWithFrame:(CGRect) inputFrame;
 
 
 
 @end
-
-
 
