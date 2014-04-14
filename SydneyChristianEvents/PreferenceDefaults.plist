@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <!-- -------------------------------------------------------------------- ->
+     <!-- Internal Flags -->
+
+    <!-- Flag to check if app is run for the first time. -->
+	<key>isFirstRun</key>
+	<integer>0</integer>
+    
+
+    <!-- -------------------------------------------------------------------- ->
+     <!-- User Preference -->
+
+    <!-- Category saved by user. -->
+	<key>savedCategory</key>
+	<integer>0</integer>
+
+</dict>
+</plist>

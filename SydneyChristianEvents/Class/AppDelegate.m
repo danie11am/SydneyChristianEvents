@@ -10,8 +10,44 @@
 
 @implementation AppDelegate
 
+
+
+/**
+ *******************************************************************************
+ */
+- (void) setDefaultValues
+{
+    
+	// Get the path to file.
+    //
+	NSString *path = [[NSBundle mainBundle] bundlePath];
+    
+    
+	// Get the path to file with filename.
+    //
+	NSString *finalPath =
+    [path stringByAppendingPathComponent:@"PreferenceDefaults.plist"];
+    
+    
+	NSDictionary *prefDefaults =
+    [NSDictionary dictionaryWithContentsOfFile:finalPath];
+    
+    // Save the dictionary into the Registration Domain of the NSUserDefaults
+    // object.
+    //
+	[[NSUserDefaults standardUserDefaults] registerDefaults:prefDefaults];
+    
+}
+
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
+    [self setDefaultValues];
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

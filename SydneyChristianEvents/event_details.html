@@ -1,0 +1,111 @@
+<html>
+<head>
+    <style type="text/css">
+
+        * {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+            font-size: 12pt;
+            text-align: left;
+        }
+        p {
+            color: #606060;
+        }
+        a:link {
+            text-decoration: none
+        }
+        a:visited {
+            text-decoration: none
+        }
+        a:active {
+            text-decoration: none
+        }
+        a:hover {
+            text-decoration: none;
+            color: blue;
+        }
+        .eventTitle {
+            margin-top: 30px;
+            font-weight: bold;
+        }
+        .eventVenue {
+            margin-top: 20px;
+            font-size: 11pt;
+            color: #606060;
+        }
+        .eventDates {
+            margin-top: 10px;
+            font-size: 11pt;
+            color: #606060;
+        }
+        .eventCategories {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 11pt;
+            color: #606060;
+        }
+        .eventImage {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 11pt;
+        }
+        .eventDescription {
+            margin-top: 20px;
+        }
+        
+    </style>
+<title>Event Details</title>
+</head>
+
+
+<body>
+
+    <!--
+     What will be shown in this UIWebView:
+     
+     - Title
+     - Venue
+     - From Date - To Date
+     - Categories
+     - Poster image retrieved from internet at run time.
+     - Event Description
+
+     -->
+    
+    <div class="eventTitle">
+        <!--
+        <img src="app_banner@2x.png"/>
+         -->
+        [[[EVENT_TITLE]]]
+    </div>
+
+    <div class="eventVenue">
+        地點： [[[EVENT_VENUE]]]
+    </div>
+
+    <div class="eventDates">
+        日期： [[[EVENT_DATES]]]
+    </div>
+
+    <div class="eventCategories">
+        類別： [[[EVENT_CATEGORIES]]]
+    </div>
+
+    <hr />
+
+    <div class="eventImage">
+        <a href="[[[EVENT_IMAGE]]]">
+            <img width="90%" src="[[[EVENT_IMAGE]]]"/>
+        </a>
+    </div>
+    
+    <div class="eventDescription">
+        [[[EVENT_DESCRIPTION]]]
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+
+</body>
+</html>
+
