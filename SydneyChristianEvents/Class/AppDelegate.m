@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "EventListViewController.h"
 
 @implementation AppDelegate
 
@@ -14,10 +15,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+
+    EventListViewController *eventListVC = [[EventListViewController alloc] init];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController: eventListVC];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = navVC;
+    [self.window makeKeyAndVisible];
+
+    //self.window.backgroundColor = [UIColor yellowColor];
+
     [self setDefaultValues];
     
-    // Override point for customization after application launch.
     return YES;
 }
 							
@@ -26,22 +35,13 @@
 - (void) setDefaultValues
 {
     
-	// Get the path to file.
-    //
+	// Get the path to preference file
 	NSString *path = [[NSBundle mainBundle] bundlePath];
+	NSString *finalPath = [path stringByAppendingPathComponent:@"PreferenceDefaults.plist"];
     
-    
-	// Get the path to file with filename.
-    //
-	NSString *finalPath =
-    [path stringByAppendingPathComponent:@"PreferenceDefaults.plist"];
-    
-    
-	NSDictionary *prefDefaults =
-    [NSDictionary dictionaryWithContentsOfFile:finalPath];
+	NSDictionary *prefDefaults = [NSDictionary dictionaryWithContentsOfFile:finalPath];
     
     // Save the dictionary into the Registration Domain of the NSUserDefaults object.
-    //
 	[[NSUserDefaults standardUserDefaults] registerDefaults:prefDefaults];
     
 }

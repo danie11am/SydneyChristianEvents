@@ -47,7 +47,7 @@
 @property (nonatomic, retain) NSMutableArray *eventEntries;
 
 @property (strong) NSString *currentElement;
-@property (strong, nonatomic) IBOutlet UITableView *tableview;
+@property (strong, nonatomic) UITableView *tableview;
 
 
 @property (strong) ActivityIndicatorOverlayVC *activityOverlayVC;

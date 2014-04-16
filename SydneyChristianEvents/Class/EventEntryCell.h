@@ -11,10 +11,8 @@
 
 @interface EventEntryCell : UITableViewCell
 
-
-@property (strong, nonatomic) IBOutlet UILabel *eventTitleLabel;
-@property (strong, nonatomic) IBOutlet UILabel *eventDateLabel;
-
+@property (strong, nonatomic) UILabel *eventTitleLabel;
+@property (strong, nonatomic) UILabel *eventDateLabel;
 
 @end
 

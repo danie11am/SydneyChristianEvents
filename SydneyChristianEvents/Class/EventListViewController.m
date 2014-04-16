@@ -27,11 +27,24 @@
 
     [super viewDidLoad];
 
-	// Do any additional setup after loading the view, typically from a nib.
+    self.title = @"基督教公開聚會";
 
+    // Get a frame from UIScreen class function.
+	CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
 
-    // Use a flag in UserDefaults to determine if app is run for the first time.
-    // If it is, download the RSS file to get event entries.
+    self.tableview = [[UITableView alloc] initWithFrame: applicationFrame style:UITableViewStylePlain];
+    self.tableview.delegate = self;
+    self.tableview.dataSource = self;
+    
+    /*
+     Debugging.
+    self.view.backgroundColor = [UIColor blueColor];
+    self.tableview.backgroundColor = [UIColor yellowColor];
+     */
+    
+    [self.view addSubview: self.tableview];
+    
+    // Check if user running for the first time. If it is, download the RSS file to get event entries.
     int isFirstRun =
     [[NSUserDefaults standardUserDefaults] integerForKey: @"isFirstRun"];
     
@@ -47,6 +60,7 @@
         [self refreshRSS];
     }
     
+    
 }
 
 
@@ -56,23 +70,15 @@
     // Debugging.
     //NSLog(@"NewsViewController.m: viewWillAppear(): called");
     
-    
     [super viewWillAppear:animated];
 
-
     // Read from CoreData to read the event entries.
-    //
     [self fetchDatabase];
-    
     [self.tableview reloadData];
 
-
     // "Deselect" the row, otherwise the cell will remain highlighted.
-    //
-	[self.tableview
-     deselectRowAtIndexPath:
-     [self.tableview indexPathForSelectedRow]
-     animated:YES
+    [self.tableview deselectRowAtIndexPath: [self.tableview indexPathForSelectedRow]
+                                  animated:YES
      ];
 
 }
@@ -88,11 +94,9 @@
 
 
 /**
- * This is automatically called when a "segue" is triggered.
- *
- * "Segue" means transition to other view controllers and is configured 
- * inside the Storyboard.
- *
+ This is automatically called when a "segue" is triggered.
+ 
+ "Segue" means transition to other view controllers and is configured inside the Storyboard.
  */
 - (void) prepareForSegue: (UIStoryboardSegue *)segue
                   sender: (id)sender
@@ -674,16 +678,13 @@
     [tableView dequeueReusableCellWithIdentifier: cellIdentifier];
 
 
-//    if (cell == nil) {
-//
-//        cell = [[EventEntryCell alloc] initWithStyle: UITableViewCellStyleValue1
-//                                      reuseIdentifier: cellIdentifier
-//                ];
-//
-//        // Row should not be selectable. Actions go through buttons.
-//        //cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//
-//    }
+    if (cell == nil) {
+
+        cell = [[EventEntryCell alloc] initWithStyle: UITableViewCellStyleValue1
+                                      reuseIdentifier: cellIdentifier
+                ];
+
+    }
 
     EventEntry *eventEntry = [self.eventEntries objectAtIndex: indexPath.row];
 
