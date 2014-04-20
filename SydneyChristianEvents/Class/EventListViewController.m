@@ -27,7 +27,7 @@
 
     [super viewDidLoad];
 
-    self.title = @"基督教公開聚會";
+    self.title = @"澳洲雪梨 基督教 公開聚會";
 
     // Get a frame from UIScreen class function.
 	CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
@@ -44,7 +44,10 @@
     
     [self.view addSubview: self.tableview];
     
-    // Check if user running for the first time. If it is, download the RSS file to get event entries.
+    // Check if user running for the first time.
+    // Name of flag is misleading - if the flag is true, it does not mean this is the first run.
+    // Rather, being true means that
+    // If it is, download the RSS file to get event entries.
     int isFirstRun =
     [[NSUserDefaults standardUserDefaults] integerForKey: @"isFirstRun"];
     
@@ -95,9 +98,9 @@
 
 /**
  This is automatically called when a "segue" is triggered.
- 
  "Segue" means transition to other view controllers and is configured inside the Storyboard.
  */
+/*
 - (void) prepareForSegue: (UIStoryboardSegue *)segue
                   sender: (id)sender
 {
@@ -107,23 +110,17 @@
     {
 
         // Get reference to destination view controller.
-        //
         EventDetailsVC *eventDetailsVC = [segue destinationViewController];
-
         
         // Get the Event and pass it to the EventDetailsVC.
-        //
         NSIndexPath *indexPath = [self.tableview indexPathForSelectedRow];
         
-        //NSLog(@"indexPath.row: %i", indexPath.row);
-        
-        EventEntry *event =
-        [self.eventEntries objectAtIndex: indexPath.row];
-
+        EventEntry *event = [self.eventEntries objectAtIndex: indexPath.row];
         eventDetailsVC.eventEntry = event;
 
     }
 }
+*/
 
 
 
@@ -705,17 +702,30 @@
 
 
 
+- (void)          tableView:(UITableView *)tableView
+    didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //NSLog(@"ViewController.m: didSelectRowAtIndexPath: called.");
+    
+    // Get the Event and pass it to the EventDetailsVC.
+    EventDetailsVC *detailsVC = [[EventDetailsVC alloc] init];
+    EventEntry *event = [self.eventEntries objectAtIndex: indexPath.row];
+    detailsVC.eventEntry = event;
+
+    [self.navigationController pushViewController:detailsVC animated:YES];
+    
+}
+
+
+
 #pragma mark - NSXMLParserDelegate functions
 
 
 
 - (void)parserDidStartDocument:(NSXMLParser *)parser
 {
-    
     // Debugging.
-    //
     NSLog(@"ViewController.m: parserDidStartDocument");
-    
 }
 
 

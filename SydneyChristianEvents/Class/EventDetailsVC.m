@@ -20,20 +20,6 @@
 
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-
-    if (self) {
-
-        // Custom initialization
-
-    }
-    return self;
-}
-
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -43,16 +29,11 @@
     NSLog(@"EventDetailsVC.m: viewDidLoad(): Started.");
 
 
-    // UIWebView delegate has already been set to self, in Storyboard.
-
-
     // Set title.
-    //
     self.title = self.eventEntry.title;
 
 
     //--------------------------------------------------------------------------
-
     // Open the text file which is a HTML string.
     //
     NSString* textFilePath =
@@ -100,7 +81,7 @@
     textFileContent = (NSMutableString *)
     [textFileContent
      stringByReplacingOccurrencesOfString: @"[[[EVENT_IMAGE]]]"
-     withString: self.eventEntry.poster
+     withString: (self.eventEntry.poster ? self.eventEntry.poster : @"")
      ];
     
     textFileContent = (NSMutableString *)
@@ -119,12 +100,16 @@
     // Set the path so that image can be loaded.
     //
     NSString *path = [[NSBundle mainBundle] bundlePath];
-
     NSURL *baseURL = [NSURL fileURLWithPath:path];
     
+    
+    CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
+    self.eventWebView = [[UIWebView alloc] initWithFrame: applicationFrame];
+    self.eventWebView.backgroundColor = [UIColor whiteColor];
 
+    [self.view addSubview: self.eventWebView];
+    
     // Pass the string to the web view.
-    //
     [self.eventWebView loadHTMLString: textFileContent
                               baseURL: baseURL
      ];

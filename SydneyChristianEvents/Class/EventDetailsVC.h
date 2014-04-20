@@ -14,9 +14,8 @@
 
 @interface EventDetailsVC : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIWebView *eventWebView;
-
-@property (strong) EventEntry *eventEntry;
+@property (strong, nonatomic) UIWebView *eventWebView;
+@property (strong, nonatomic) EventEntry *eventEntry;
 
 @end
 
