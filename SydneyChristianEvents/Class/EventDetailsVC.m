@@ -104,16 +104,24 @@
     
     
     CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
-    self.eventWebView = [[UIWebView alloc] initWithFrame: applicationFrame];
-    self.eventWebView.backgroundColor = [UIColor whiteColor];
+    CGFloat webViewHeight = applicationFrame.size.height + 20; // status bar
+    CGRect webViewFrame = CGRectMake(0, 0, applicationFrame.size.width, webViewHeight);
 
+    self.eventWebView = [[UIWebView alloc] initWithFrame: webViewFrame];
+    self.eventWebView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview: self.eventWebView];
+
     
     // Pass the string to the web view.
     [self.eventWebView loadHTMLString: textFileContent
                               baseURL: baseURL
      ];
 
+    // Debugging.
+    /*
+    self.eventWebView.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor blueColor];
+     */
 }
 
 

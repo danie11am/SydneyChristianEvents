@@ -29,33 +29,54 @@
 
     self.title = @"澳洲雪梨 基督教 公開聚會";
 
+    // Add the table view and toolbar.
+
     // Get a frame from UIScreen class function.
 	CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
+    
+    CGFloat toolbarHeight = 44;
+    CGFloat statusBarHeight = 20;
+    CGFloat tableViewHeight = applicationFrame.size.height - toolbarHeight + statusBarHeight;
 
-    self.tableview = [[UITableView alloc] initWithFrame: applicationFrame style:UITableViewStylePlain];
+    CGRect tableFrame = CGRectMake(0, 0, applicationFrame.size.width, tableViewHeight);
+    CGRect toolbarFrame = CGRectMake(0, tableViewHeight, applicationFrame.size.width, toolbarHeight);
+
+    self.tableview = [[UITableView alloc] initWithFrame: tableFrame style:UITableViewStylePlain];
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
+    [self.view addSubview: self.tableview];
+
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    toolbar.frame = toolbarFrame;
     
+    NSMutableArray *toolbarItems = [[NSMutableArray alloc] init];
+    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+                                                                                 target:self
+                                                                                 action:@selector(refreshRSS)
+                                    ];
+    [toolbarItems addObject: refreshItem];
+    [toolbar setItems: toolbarItems];
+
+    [self.view addSubview:toolbar];
+
+    // Debugging.
     /*
-     Debugging.
     self.view.backgroundColor = [UIColor blueColor];
     self.tableview.backgroundColor = [UIColor yellowColor];
      */
-    
-    [self.view addSubview: self.tableview];
-    
-    // Check if user running for the first time.
-    // Name of flag is misleading - if the flag is true, it does not mean this is the first run.
-    // Rather, being true means that
-    // If it is, download the RSS file to get event entries.
-    int isFirstRun =
-    [[NSUserDefaults standardUserDefaults] integerForKey: @"isFirstRun"];
+
+
+    // Check if user running for the first time and retrieve event info if so.
+    //
+    // Name of the flag is misleading - if "isFirstRun" is YES, it does not mean this is the first run.
+    // Rather, "isFirstRun" is set during first run, therefore being YES means that it's NOT the first run.
+    // ...Sorry!
+    //
+    int isFirstRun = [[NSUserDefaults standardUserDefaults] integerForKey: @"isFirstRun"];
     
     if (isFirstRun == 0)
     {
-        [[NSUserDefaults standardUserDefaults] setInteger: 1
-                                                   forKey: @"isFirstRun"
-         ];
+        [[NSUserDefaults standardUserDefaults] setInteger: 1 forKey: @"isFirstRun"];
 
         // Make the change effective immediately.
         [[NSUserDefaults standardUserDefaults] synchronize];
@@ -207,13 +228,11 @@
 
     // Get the RSS feed xml file and parse it.
     //
-    // This must be called through the performSelector instead of calling
-    // directly, like the following,
+    // This must be called through the performSelector instead of calling directly, like the following,
     //   [self parseXMLFileAtURL: rssFeedURL];
     //
-    // Calling directly would cause the Activity Indicator Overlay not
-    // able to be displayed, because it takes some time before the next
-    // re-draw cycle.
+    // Calling directly would cause the Activity Indicator Overlay not able to be displayed, because it takes some
+    // time before the next re-draw cycle.
     //
     [self performSelector:@selector(parseXMLFileAtURL:)
                withObject:rssFeedURL
@@ -229,10 +248,9 @@
     
     // Fetch existing entries from database.
     //
-    // Create a fetch request; find the EventEntry entity and assign it to the
-    // request; add a sort descriptor; then execute the fetch.
+    // Create a fetch request; find the EventEntry entity and assign it to the request; add a sort descriptor;
+    // then execute the fetch.
     //
-
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
 
     NSEntityDescription *entity =

@@ -1,13 +1,18 @@
 
 
-An app that shows details of events that are related to Chinese Christian community in Sydney.
+An app that provides info  that are related to Chinese Christian community in Sydney.
 
 Event info are sourced using RSS entries from a server.
 
 To-do:
 
 - Remove the use of storyboard.
-    - return cell at cellForRowAtIndexPath
+    - done - Event list screen
+    - done - Event details screen
+    - done - Toolbar
+    - done - Refresh feature
+    - Category filter
+    - Toolbar is hidden in iOS6.
 - Fix bug where listed event is not mapped to correct event details.
 - Optimize codes for iOS7.
 - Handle situation when network is unavailable / can't reach server.
