@@ -12,8 +12,8 @@ To-do:
     - done - Toolbar
     - done - Refresh feature
     - Category filter
-    - Toolbar is hidden in iOS6.
 - Fix bug where listed event is not mapped to correct event details.
+- Toolbar is hidden in iOS6 - Use Auto Layout
 - Optimize codes for iOS7.
 - Handle situation when network is unavailable / can't reach server.
 - Update app icon.
