@@ -208,7 +208,7 @@
  */
 - (void) pushCategoryVC
 {
-    CategoryVC *categoryVC = [[CategoryVC alloc] initWithStyle: UITableViewStylePlain];
+    CategoryVC *categoryVC = [[CategoryVC alloc] initWithStyle: UITableViewStyleGrouped];
     [self.navigationController pushViewController:categoryVC animated:YES];
 }
 
@@ -707,8 +707,7 @@
     NSString *cellIdentifier = @"EventCell";
 
 
-    EventEntryCell *cell =
-    [tableView dequeueReusableCellWithIdentifier: cellIdentifier];
+    EventEntryCell *cell = [tableView dequeueReusableCellWithIdentifier: cellIdentifier];
 
 
     if (cell == nil) {

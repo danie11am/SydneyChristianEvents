@@ -66,9 +66,7 @@
      ];
 
     
-    int categoryId =
-    [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
-
+    int categoryId = [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
     self.selectedRow = categoryId;
 
 
@@ -103,25 +101,19 @@
 
 
 
+/** Return the number of sections. */
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
-    // Return the number of sections.
-    //
     // There is only 1 section.
-    //
     return 1;
 }
 
 
 
+/** Return the number of rows in the section. */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    // Return the number of rows in the section.
-    //
     return [self.categoriesInChinese count];
-
 }
 
 
@@ -129,18 +121,12 @@
 - (UITableViewCell *)tableView: (UITableView *)tableView
          cellForRowAtIndexPath: (NSIndexPath *)indexPath
 {
-
     static NSString *cellIdentifier = @"CategoryCell";
 
-
-    UITableViewCell *cell =
-    [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-
+    UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
 
     // Configure the cell...
-    //
     // For some reason it seems that it is ok not to call them sometimes.
-    //
     if (cell == nil) {
 
         NSLog(@"CategoryVC.m: cellForRowAtIndexPath(): cell is null.");
@@ -156,27 +142,18 @@
 
 
 	// Check if this cell needs to be marked.
-    //
 	if (indexPath.row == self.selectedRow)
     {
-        
 		// Set the cell to have checkmark.
-        //
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
 
 	} else
     {
-
-		// Set the cell to have checkmark.
-        //
+		// Set the cell to CLEAR checkmark.
 		cell.accessoryType = UITableViewCellAccessoryNone;
-        
 	}
 
-    
-    NSString *categoryInChinese =
-    [self.categoriesInChinese objectAtIndex: indexPath.row];
-
+    NSString *categoryInChinese = [self.categoriesInChinese objectAtIndex: indexPath.row];
     cell.textLabel.text = categoryInChinese;
 
 
