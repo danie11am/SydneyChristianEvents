@@ -12,7 +12,7 @@
 #import "EventEntryCell.h"
 #import "AppUtil.h"
 #import "ActivityIndicatorOverlayVC.h"
-
+#import "CategoryVC.h"
 
 @interface EventListViewController ()
 
@@ -29,7 +29,6 @@
 
     self.title = @"澳洲雪梨 基督教 公開聚會";
 
-    // Add the table view and toolbar.
 
     // Get a frame from UIScreen class function.
 	CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
@@ -41,20 +40,30 @@
     CGRect tableFrame = CGRectMake(0, 0, applicationFrame.size.width, tableViewHeight);
     CGRect toolbarFrame = CGRectMake(0, tableViewHeight, applicationFrame.size.width, toolbarHeight);
 
+    // Add table view.
     self.tableview = [[UITableView alloc] initWithFrame: tableFrame style:UITableViewStylePlain];
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
     [self.view addSubview: self.tableview];
 
-    UIToolbar *toolbar = [[UIToolbar alloc] init];
-    toolbar.frame = toolbarFrame;
-    
+    // Add toolbar.
+    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame: toolbarFrame];
     NSMutableArray *toolbarItems = [[NSMutableArray alloc] init];
     UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
                                                                                  target:self
                                                                                  action:@selector(refreshRSS)
                                     ];
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                                target:nil
+                                                                                action:nil
+                                      ];
+    UIBarButtonItem *filterItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+                                                                                target:self
+                                                                                action:@selector(pushCategoryVC)
+                                   ];
     [toolbarItems addObject: refreshItem];
+    [toolbarItems addObject: flexibleSpace];
+    [toolbarItems addObject: filterItem];
     [toolbar setItems: toolbarItems];
 
     [self.view addSubview:toolbar];
@@ -174,32 +183,41 @@
     
     
     // Convert URL from NSString* to NSURL.
-    //
     NSURL *nsURL = [NSURL URLWithString:inputURL];
-    //
     //NSURL *nsURL = [NSURL fileURLWithPath:inputURL];
-
     
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL: nsURL];
-
     [xmlParser setDelegate: self];
 
 
     // Turn off the unnecessary features.
-    //
     [xmlParser setShouldProcessNamespaces: NO];
     [xmlParser setShouldReportNamespacePrefixes: NO];
     [xmlParser setShouldResolveExternalEntities: NO];
 
-
     // Get the XML file and parse the content.
-    //
     [xmlParser parse];
     
 }
 
 
 
+/** 
+ Show the list of available event categories.
+ Called when user tap on the filter icon. 
+ */
+- (void) pushCategoryVC
+{
+    CategoryVC *categoryVC = [[CategoryVC alloc] initWithStyle: UITableViewStylePlain];
+    [self.navigationController pushViewController:categoryVC animated:YES];
+}
+
+
+
+/** 
+ Retrieve event info from RSS feed. 
+ Called when user taps on refresh icon, or automatically during initial run.
+ */
 - (IBAction) refreshRSS
 {
 
