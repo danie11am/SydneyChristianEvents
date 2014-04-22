@@ -4,19 +4,22 @@ An app that provides info  that are related to Chinese Christian community in Sy
 
 Event info are sourced using RSS entries from a server.
 
-To-do:
+Bug fixing:
 
-- Remove the use of storyboard.
+- done - Remove the use of storyboard.
     - done - Event list screen
     - done - Event details screen
     - done - Toolbar
     - done - Refresh feature
-    - Category filter
-- Fix bug where listed event is not mapped to correct event details.
+    - done - Category filter
+- done - Optimize codes for iOS7.
 - Toolbar is hidden in iOS6 - Use Auto Layout
-- Optimize codes for iOS7.
-- Handle situation when network is unavailable / can't reach server.
+- Fix bug where listed event is not mapped to correct event details.
 - Update app icon.
+
+More features:
+
+- Handle situation when network is unavailable / can't reach server.
 - Show location of event using in-app map view.
 - Download and save event images.
 - Make it a universal app.
