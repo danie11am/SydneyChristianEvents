@@ -27,7 +27,6 @@
 		64DCC814173713B300964C3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DCC813173713B300964C3A /* CoreGraphics.framework */; };
 		64DCC81A173713B300964C3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64DCC818173713B300964C3A /* InfoPlist.strings */; };
 		64DCC81C173713B300964C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DCC81B173713B300964C3A /* main.m */; };
-		64DCC829173713B300964C3A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DCC827173713B300964C3A /* MainStoryboard.storyboard */; };
 		64DCC833173B7EE400964C3A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DCC832173B7EE400964C3A /* CoreData.framework */; };
 		64DCC836173B7F1700964C3A /* EventEntry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64DCC834173B7F1700964C3A /* EventEntry.xcdatamodeld */; };
 		AB4DCE9118FBD61C008BA0F7 /* Design.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4DCE9018FBD61C008BA0F7 /* Design.md */; };
@@ -66,7 +65,6 @@
 		64DCC819173713B300964C3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		64DCC81B173713B300964C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		64DCC81D173713B300964C3A /* SydneyChristianEvents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SydneyChristianEvents-Prefix.pch"; sourceTree = "<group>"; };
-		64DCC828173713B300964C3A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		64DCC832173B7EE400964C3A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		64DCC835173B7F1700964C3A /* EventEntry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventEntry.xcdatamodel; sourceTree = "<group>"; };
 		AB4DCE9018FBD61C008BA0F7 /* Design.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Design.md; path = Documentation/Design.md; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 				64DCC817173713B300964C3A /* SydneyChristianEvents-Info.plist */,
 				649A0A7B1740413300C7972F /* event_details.html */,
 				64DCC818173713B300964C3A /* InfoPlist.strings */,
-				64DCC827173713B300964C3A /* MainStoryboard.storyboard */,
 				64DCC81B173713B300964C3A /* main.m */,
 				64DCC81D173713B300964C3A /* SydneyChristianEvents-Prefix.pch */,
 				64DCC834173B7F1700964C3A /* EventEntry.xcdatamodeld */,
@@ -254,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64DCC81A173713B300964C3A /* InfoPlist.strings in Resources */,
-				64DCC829173713B300964C3A /* MainStoryboard.storyboard in Resources */,
 				ABA0FCDF18FBCF500034E220 /* README.md in Resources */,
 				6498AFAE173CEB02008E4D18 /* Default-568h@2x.png in Resources */,
 				6498AFAF173CEB02008E4D18 /* Default.png in Resources */,
@@ -296,14 +292,6 @@
 				64DCC819173713B300964C3A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		64DCC827173713B300964C3A /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64DCC828173713B300964C3A /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
