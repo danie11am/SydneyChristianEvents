@@ -16,6 +16,8 @@
 
 @interface EventListViewController ()
 
+@property (strong, nonatomic) UIToolbar *toolbar;
+
 @end
 
 
@@ -29,10 +31,13 @@
 
     self.title = @"澳洲雪梨 基督教 公開聚會";
 
+    // Traditional Frame Layout.
+    /*
 
     // Get a frame from UIScreen class function.
 	CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
     
+    // Prepare dimensions of UI components.
     CGFloat toolbarHeight = 44;
     CGFloat statusBarHeight = 20;
     CGFloat tableViewHeight = applicationFrame.size.height - toolbarHeight + statusBarHeight;
@@ -67,6 +72,41 @@
     [toolbar setItems: toolbarItems];
 
     [self.view addSubview:toolbar];
+     
+     */
+    
+    // Add table view.
+    self.tableview = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.tableview.delegate = self;
+    self.tableview.dataSource = self;
+    self.tableview.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview: self.tableview];
+
+
+    // Add toolbar.
+    self.toolbar = [[UIToolbar alloc] initWithFrame: CGRectZero];
+    self.toolbar.translatesAutoresizingMaskIntoConstraints = NO;
+    NSMutableArray *toolbarItems = [[NSMutableArray alloc] init];
+    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+                                                                                 target:self
+                                                                                 action:@selector(refreshRSS)
+                                    ];
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                                   target:nil
+                                                                                   action:nil
+                                      ];
+    UIBarButtonItem *filterItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+                                                                                target:self
+                                                                                action:@selector(pushCategoryVC)
+                                   ];
+    [toolbarItems addObject: refreshItem];
+    [toolbarItems addObject: flexibleSpace];
+    [toolbarItems addObject: filterItem];
+    [self.toolbar setItems: toolbarItems];
+    [self.view addSubview:self.toolbar];
+    
+    [self addConstraints];
+
 
     // Debugging.
     /*
@@ -155,6 +195,87 @@
 
 
 #pragma mark - Custom methods
+
+
+
+/** Set auto-layout constraints for UI components. */
+- (void) addConstraints
+{
+    
+    NSArray *allConstraints = @[
+                                // Set table view
+                                // ...to fit all edges of self.view except bottom, which sticks with toolbar.
+                                [NSLayoutConstraint constraintWithItem: self.tableview
+                                                             attribute: NSLayoutAttributeTop
+                                                             relatedBy: NSLayoutRelationEqual
+                                                                toItem: self.view
+                                                             attribute: NSLayoutAttributeTop
+                                                            multiplier: 1.0
+                                                              constant: 0
+                                 ],
+                                [NSLayoutConstraint constraintWithItem: self.tableview
+                                                             attribute: NSLayoutAttributeRight
+                                                             relatedBy: NSLayoutRelationEqual
+                                                                toItem: self.view
+                                                             attribute: NSLayoutAttributeRight
+                                                            multiplier: 1.0
+                                                              constant: 0
+                                 ],
+                                [NSLayoutConstraint constraintWithItem: self.tableview
+                                                             attribute: NSLayoutAttributeBottom
+                                                             relatedBy: NSLayoutRelationEqual
+                                                                toItem: self.toolbar
+                                                             attribute: NSLayoutAttributeTop
+                                                            multiplier: 1.0
+                                                              constant: 0
+                                 ],
+                                [NSLayoutConstraint constraintWithItem: self.tableview
+                                                             attribute: NSLayoutAttributeLeft
+                                                             relatedBy: NSLayoutRelationEqual
+                                                                toItem: self.view
+                                                             attribute: NSLayoutAttributeLeft
+                                                            multiplier: 1.0
+                                                              constant: 0
+                                 ],
+                                // Set toolbar
+                                // ...to be at the bottom of the screen.
+                                [NSLayoutConstraint constraintWithItem: self.toolbar
+                                                             attribute: NSLayoutAttributeHeight
+                                                             relatedBy: NSLayoutRelationEqual
+                                                                toItem: nil
+                                                             attribute: NSLayoutAttributeNotAnAttribute
+                                                            multiplier: 1.0
+                                                              constant: 44
+                                 ],
+                                [NSLayoutConstraint constraintWithItem: self.toolbar
+                                                             attribute: NSLayoutAttributeLeft
+                                                             relatedBy: NSLayoutRelationEqual
+                                                                toItem: self.view
+                                                             attribute: NSLayoutAttributeLeft
+                                                            multiplier: 1.0
+                                                              constant: 0
+                                 ],
+                                [NSLayoutConstraint constraintWithItem: self.toolbar
+                                                             attribute: NSLayoutAttributeRight
+                                                             relatedBy: NSLayoutRelationEqual
+                                                                toItem: self.view
+                                                             attribute: NSLayoutAttributeRight
+                                                            multiplier: 1.0
+                                                              constant: 0
+                                 ],
+                                [NSLayoutConstraint constraintWithItem: self.toolbar
+                                                             attribute: NSLayoutAttributeBottom
+                                                             relatedBy: NSLayoutRelationEqual
+                                                                toItem: self.view
+                                                             attribute: NSLayoutAttributeBottom
+                                                            multiplier: 1.0
+                                                              constant: 0
+                                 ],
+                                ];
+    
+    [self.view addConstraints: allConstraints];
+    
+}
 
 
 

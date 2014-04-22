@@ -13,7 +13,7 @@ Bug fixing:
     - done - Refresh feature
     - done - Category filter
 - done - Optimize codes for iOS7.
-- Toolbar is hidden in iOS6 - Use Auto Layout
+- done - Toolbar is hidden in iOS6 - Use Auto Layout
 - Fix bug where listed event is not mapped to correct event details.
 - Update app icon.
 
