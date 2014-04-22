@@ -16,7 +16,31 @@
 
 @interface EventListViewController ()
 
+@property (strong) NSMutableString *rssTitle;
+@property (strong) NSMutableString *rssLink;
+@property (strong) NSMutableString *rssDescription;
+@property (strong) NSMutableString *rssAuthor;
+@property (strong) NSMutableString *rssCategory;
+@property (strong) NSMutableString *rssComments;
+@property (strong) NSMutableString *rssEnclosure;
+@property (strong) NSMutableString *rssEnclosureUrl;
+@property (strong) NSMutableString *rssGuid;
+@property (strong) NSMutableString *rssPubDate;
+
+
+@property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property (nonatomic, retain) NSMutableArray *eventEntries;
+@property (strong) NSString *currentElement;
+
+@property (strong, nonatomic) UITableView *tableview;
 @property (strong, nonatomic) UIToolbar *toolbar;
+
+@property (strong) ActivityIndicatorOverlayVC *activityOverlayVC;
+
+
 
 @end
 
@@ -26,55 +50,10 @@
 
 - (void)viewDidLoad
 {
-
     [super viewDidLoad];
 
     self.title = @"澳洲雪梨 基督教 公開聚會";
 
-    // Traditional Frame Layout.
-    /*
-
-    // Get a frame from UIScreen class function.
-	CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
-    
-    // Prepare dimensions of UI components.
-    CGFloat toolbarHeight = 44;
-    CGFloat statusBarHeight = 20;
-    CGFloat tableViewHeight = applicationFrame.size.height - toolbarHeight + statusBarHeight;
-
-    CGRect tableFrame = CGRectMake(0, 0, applicationFrame.size.width, tableViewHeight);
-    CGRect toolbarFrame = CGRectMake(0, tableViewHeight, applicationFrame.size.width, toolbarHeight);
-
-    // Add table view.
-    self.tableview = [[UITableView alloc] initWithFrame: tableFrame style:UITableViewStylePlain];
-    self.tableview.delegate = self;
-    self.tableview.dataSource = self;
-    [self.view addSubview: self.tableview];
-
-    // Add toolbar.
-    UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame: toolbarFrame];
-    NSMutableArray *toolbarItems = [[NSMutableArray alloc] init];
-    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
-                                                                                 target:self
-                                                                                 action:@selector(refreshRSS)
-                                    ];
-    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
-                                                                                target:nil
-                                                                                action:nil
-                                      ];
-    UIBarButtonItem *filterItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
-                                                                                target:self
-                                                                                action:@selector(pushCategoryVC)
-                                   ];
-    [toolbarItems addObject: refreshItem];
-    [toolbarItems addObject: flexibleSpace];
-    [toolbarItems addObject: filterItem];
-    [toolbar setItems: toolbarItems];
-
-    [self.view addSubview:toolbar];
-     
-     */
-    
     // Add table view.
     self.tableview = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     self.tableview.delegate = self;
@@ -163,34 +142,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
-/**
- This is automatically called when a "segue" is triggered.
- "Segue" means transition to other view controllers and is configured inside the Storyboard.
- */
-/*
-- (void) prepareForSegue: (UIStoryboardSegue *)segue
-                  sender: (id)sender
-{
-    NSLog(@"ViewController.m: prepareForSegue(): Started.");
-    
-    if ([[segue identifier] isEqualToString: @"showEventSegue"])
-    {
-
-        // Get reference to destination view controller.
-        EventDetailsVC *eventDetailsVC = [segue destinationViewController];
-        
-        // Get the Event and pass it to the EventDetailsVC.
-        NSIndexPath *indexPath = [self.tableview indexPathForSelectedRow];
-        
-        EventEntry *event = [self.eventEntries objectAtIndex: indexPath.row];
-        eventDetailsVC.eventEntry = event;
-
-    }
-}
-*/
 
 
 
@@ -285,7 +236,7 @@
     NSLog(@"ViewController.m: parseXMLFileAtURL(): Started.");
     
 
-    
+
 //    NSString *myRequestString =
 //    [NSString stringWithFormat:@"http://abc.com/def/webservices/aa.php?family_id=%d",self.passFamilyId];
     
