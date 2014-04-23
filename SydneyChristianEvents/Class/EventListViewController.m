@@ -1127,8 +1127,7 @@
             //
             // There is no init method for NSManagedObject (surprisingly).
             // EventEntry *newEntryContent = [[EventEntry alloc] init];
-
-            EventEntry *newEntryContent = [EventEntry alloc];
+//            EventEntry *newEntryContent = [EventEntry alloc];
 
 
             // Set the values of the Blog Entry based on parsed attributes.

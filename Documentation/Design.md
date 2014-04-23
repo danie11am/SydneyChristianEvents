@@ -16,10 +16,12 @@ Info about the Android version of this app and the project in general can be fou
 
 ### Downloading of Event info
 
-A HTTP call to retrieve event info through RSS feed is made in the initial app run.
+A HTTP call to retrieve event info through RSS feed is made in the initial app run. On subsequent runs, there will 
+no longer be auto download, but user can tap on refresh button in toolbar to retrieve the latest event info.
 
-On subsequent runs, there will no longer be auto-refresh, but user can tap on refresh button in toolbar to retrieve
-the latest event info.
+Downloading and parsing of the RSS feed (an XML file) are done using an iOS built-in class called NSXMLParser.
+Content of XML file are saved into memory during parsing of the XML file, which happens in various call back methods 
+of NSXMLParserDelegate.
 
 
 

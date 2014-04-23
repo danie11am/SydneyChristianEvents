@@ -13,12 +13,14 @@ Bug fixing:
     - done - Refresh feature
     - done - Category filter
 - done - Optimize codes for iOS7.
-- done - Toolbar is hidden in iOS6 - Use Auto Layout
+- done - Toolbar is hidden in iOS6 - Use Auto Layout.
+- Remove warning message that appears in console during run.
 - Fix bug where listed event is not mapped to correct event details.
 - Update app icon.
 
 More features:
 
+- Update info of existing events on refresh.
 - Handle situation when network is unavailable / can't reach server.
 - Show location of event using in-app map view.
 - Download and save event images.
