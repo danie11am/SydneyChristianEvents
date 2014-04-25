@@ -1,0 +1,773 @@
+<!-- RSS feed from http://sccca.org.au/rest/events130724.xml -->
+
+<!-- Auto generated schema from free website -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="result">
+        <xs:annotation>
+            <xs:documentation>RSS feed from http://sccca.org.au/rest/events130724.xml</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="node_title"/>
+                            <xs:element name="cat">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:byte" name="tid"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="is_array" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="des">
+                                <xs:complexType>
+                                    <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                        <xs:element name="p">
+                                            <xs:complexType mixed="true">
+                                                <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                                    <xs:element type="xs:string" name="span"/>
+                                                    <xs:element name="a">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute type="xs:string" name="href" use="optional"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:string" name="br"/>
+                                                </xs:choice>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ul">
+                                            <xs:complexType mixed="true">
+                                                <xs:sequence>
+                                                    <xs:element name="li" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType mixed="true">
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="br" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:string" name="span" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="ol">
+                                            <xs:complexType mixed="true">
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="li" maxOccurs="unbounded" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element type="xs:string" name="div"/>
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="pos">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                        <xs:element name="img" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:anyURI" name="src" use="optional"/>
+                                                        <xs:attribute type="xs:short" name="width" use="optional"/>
+                                                        <xs:attribute type="xs:short" name="height" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="alt" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="tim">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                        <xs:element name="span" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:int">
+                                                        <xs:attribute type="xs:string" name="class" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="ven"/>
+                            <xs:element name="hos">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                        <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:byte" name="tid"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="is_array" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="lan">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                        <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:byte" name="tid"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="is_array" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:int" name="upd"/>
+                            <xs:element type="xs:short" name="nid"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="is_array"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+
+
+<!-- RSS content -->
+<result is_array="true">
+    <!-- EVENT *********************************************************************************** -->
+    <item>
+        <node_title>「流金歲月」夫婦公開講座</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>2</tid>
+            </item>
+        </cat>
+        <des>
+            <p><span>講員：梁燕城博士</span></p> <p>文化更新研究中心院長，著名中國哲學學者、時事評論家、曾任香港浸信會學院高級講師，並出版過多本探討哲學及基督教書籍。</p> <ul><li>手牽手重温戀愛、空巢生活更精采</li> </ul><p>莫慶堯博士紀念公開講座</p> <p>免費入場</p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-single">1398693600</span>
+        </tim>
+        <ven>Canberra</ven>
+        <hos is_array="true">
+            <item>
+                <tid>54</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+            <item>
+                <tid>15</tid>
+            </item>
+        </lan>
+        <upd>1391746700</upd>
+        <nid>1046</nid>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item>
+        <node_title>夫婦進深營（華語）</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>2</tid>
+            </item>
+        </cat>
+        <des>
+            <p>報名查詢：(02)9715 6923 <a href="mailto:info@mffc.org.au">info@mffc.org.au</a><br /> 費用：$560</p> <p> </p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-start">1398952800</span> to <span class="date-display-end">1399125600</span>
+        </tim>
+        <ven>Apollo Resort, Wamberal, NSW</ven>
+        <hos is_array="true">
+            <item>
+                <tid>54</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>15</tid>
+            </item>
+        </lan>
+        <upd>1391746786</upd>
+        <nid>1047</nid>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item>
+        <node_title>「中西教養子女方法的融匯貫通」 親子公開講座</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>2</tid>
+            </item>
+        </cat>
+        <des>
+            <p>莫慶堯博士紀念公開講座</p> <p>講員：梁燕城博士<br /> 文化更新研究中心院長，著名中國哲學學者、時事評論家、曾任香港浸信會學院高級講師，並出版過多本探討哲學及基督教書籍。</p> <ul><li>如何承傳優良的中國傳統文化予下一代</li> <li>如何集中西文化之所長去培育敬虔的子女</li> </ul>
+        </des>
+        <pos>
+            <img src="http://sccca.org.au/sites/default/files/mffc2014.jpg" width="896" height="558" alt="" />
+        </pos>
+        <tim>
+            <span class="date-display-start">1399023000</span> to <span class="date-display-end">1399030200</span>
+        </tim>
+        <ven>西雪梨華人基督教會, 90 Homebush Road, Strathfield 2135</ven>
+        <hos is_array="true">
+            <item>
+                <tid>54</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1391746472</upd>
+        <nid>1044</nid>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item>
+        <node_title>「異國情鴛驚夢散」夫婦公開講座</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>2</tid>
+            </item>
+        </cat>
+        <des>
+            <p>莫慶堯博士紀念公開講座</p> <p>講員：梁燕城博士<br /> 文化更新研究中心院長，著名中國哲學學者、時事評論家、曾任香港浸信會學院高級講師，並出版過多本探討哲學及基督教書籍。</p> <ul><li>下一代跟本地人通婚所面對的衝擊</li> <li>如何增進異國婚姻的姻親和婆媳關係<br /></li> </ul>
+        </des>
+        <pos>
+            <img src="http://sccca.org.au/sites/default/files/mffc2014.jpg" width="896" height="558" alt="" />
+        </pos>
+        <tim>
+            <span class="date-display-start">1399176000</span> to <span class="date-display-end">1399183200</span>
+        </tim>
+        <ven>中央浸信會, 619 George Street, Haymarket 2000</ven>
+        <hos is_array="true">
+            <item>
+                <tid>54</tid>
+            </item>
+            <item>
+                <tid>42</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1391746575</upd>
+        <nid>1045</nid>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item>
+        <node_title>「恪守《聖經》的基督徒或人文基督徒？」－男士守望小組</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>11</tid>
+            </item>
+            <item>
+                <tid>5</tid>
+            </item>
+        </cat>
+        <des>
+            <p>晨光男士守望小組 2014</p> <p>坦誠分享、彼此支持及禱告，學習個人生命成長及更新</p> <p><span>2014 專題探討: 《鏡中的男人》- 認清自己的身份</span></p> <p>《鏡中的男人》作者派特前半生成功地創業，多年擔任59家公司與合資公司總裁或合夥人。他撰寫了《鏡中的男人》，分享他尋求人生意義、解決人際關係、財務、時間、性情上、誠實正直等問題的過程中怎樣與神建立更深刻關係。中國男人愛慨嘆“人在江湖，身不由己”。派特則身體力行，91年他賣掉自己的企業，建立了專門幫助事業成功的男士在職場內外，有目標，有意義地邁向成熟的福音工作。</p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-start">1399541400</span> to <span class="date-display-end">1399550400</span>
+        </tim>
+        <ven>7 Crown Street, Harris Park NSW</ven>
+        <hos is_array="true">
+            <item>
+                <tid>18</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1391637291</upd>
+        <nid>1032</nid>
+    </item>
+    <item>
+        <node_title>「佛教信些什麼？」神學講座</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>1</tid>
+            </item>
+            <item>
+                <tid>6</tid>
+            </item>
+        </cat>
+        <des><p>講員：池耀興博士</p> <p> </p></des>
+        <pos/>
+        <tim>
+            <span class="date-display-single">1399800600</span>
+        </tim>
+        <ven/>
+        <hos is_array="true">
+            <item>
+                <tid>48</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>15</tid>
+            </item>
+        </lan>
+        <upd>1390708915</upd>
+        <nid>1023</nid>
+    </item>
+    <item>
+        <node_title>「身心醫治　全人關懷」癌病之綜合治療及護理</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>11</tid>
+            </item>
+        </cat>
+        <des>
+            <p>題目：</p> <ul><li>家庭醫生在癌症治療中之角色（粵語）梁福榮醫生 Dr Fred Leung</li> <li>大腸癌－預防與治療（粵語）黃嘉羊醫生 Dr Mark Wong</li> </ul><p>不設門票 先到先得 免費入場</p> <p>查詢：9267 5977（潘小姐）</p> <p>溫馨提示：敬請注意，本講座所提供之所有資訊（包括問答時間）只可作參考之用，並不能以此構成任何醫患之關係。若與會人士以此自行作出任何臨床決定而未經閣下之主診醫生或專業健康從業人員認可，康恩關懷中心，所有講員及其所屬之專業學會一概不負上任何法律上之責任。</p> <p> </p>
+        </des>
+        <pos>
+            <img src="http://sccca.org.au/sites/default/files/cancare_events.jpg" width="1148" height="1639" alt="" />
+        </pos>
+        <tim>
+            <span class="date-display-start">1400299200</span> to <span class="date-display-end">1400310000</span>
+        </tim>
+        <ven>雪梨西區基督教會, 3A Provincial St., Auburn</ven>
+        <hos is_array="true">
+            <item>
+                <tid>62</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1396854602</upd>
+        <nid>1078</nid>
+    </item>
+    <item>
+        <node_title>創世記 聖經信息查經班－西南區</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>7</tid>
+            </item>
+        </cat>
+        <des>
+            <p>《創世記》是聖經第一卷書。是我們信仰的基礎。這書卷回答了人生幾個重要的問題：人從哪裡來？人活著是為什麼？人死後會往哪裡去？<br /> 神創造人後，把我們放在一個極崇高的地位，可惜人犯罪，不但不能活出神給人的計劃與心意，還要面對永遠的滅亡。《創世記》啓示了神對人的愛及祂給人的拯救計劃與福氣。沒有《創世記》，人是沒有辦法明白為什麼要相信耶穌。《創世記》是我們信仰的重要基礎，是每個基督徒必讀的一卷書。</p> <p>每周一次，共11周</p> <p><span>教師： 鄧英善牧師</span></p> <p>費用：材枓費AUD$10 (新學員註冊費AUD$10)</p> <p><span>證書：</span><span>聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢</span></p> <p>查經模式</p> <ul><li>使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點</li> <li>天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的</li> <li>分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵</li> <li>導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長</li> </ul><p><span>報名手續</span></p> <ol><li>電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)</li> <li>網上直接報名，開課時補填報名表格及邀交上述費用</li> </ol><p>查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org</p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-start">1400459400</span> to <span class="date-display-end">1406514600</span>
+        </tim>
+        <ven>西雪梨華人基督教會, 90 Homebush Rd., Strathfield, NSW 2135</ven>
+        <hos is_array="true">
+            <item>
+                <tid>57</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+            <item>
+                <tid>15</tid>
+            </item>
+        </lan>
+        <upd>1394081407</upd>
+        <nid>1061</nid>
+    </item>
+    <item>
+        <node_title>創世記 聖經信息查經班－北區</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>7</tid>
+            </item>
+        </cat>
+        <des>
+            <p>《創世記》是聖經第一卷書。是我們信仰的基礎。這書卷回答了人生幾個重要的問題：人從哪裡來？人活著是為什麼？人死後會往哪裡去？<br /> 神創造人後，把我們放在一個極崇高的地位，可惜人犯罪，不但不能活出神給人的計劃與心意，還要面對永遠的滅亡。《創世記》啓示了神對人的愛及祂給人的拯救計劃與福氣。沒有《創世記》，人是沒有辦法明白為什麼要相信耶穌。《創世記》是我們信仰的重要基礎，是每個基督徒必讀的一卷書。</p> <p>每周一次，共11周</p> <p>教師： 鄧英善牧師</p> <p>費用：材枓費AUD$10 (新學員註冊費AUD$10)</p> <p><span>證書：</span><span>聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢</span></p> <p>查經模式</p> <ul><li>使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點</li> <li>天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的</li> <li>分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵</li> <li>導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長</li> </ul><p><span>報名手續</span></p> <ol><li>電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)</li> <li>網上直接報名，開課時補填報名表格及邀交上述費用</li> </ol><p>查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org</p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-start">1400491800</span> to <span class="date-display-end">1406547000</span>
+        </tim>
+        <ven>
+            Chatswood Church of Christ, 365 Victoria Ave., Chatswood, NSW 2067
+        </ven>
+        <hos is_array="true">
+            <item>
+                <tid>57</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1394081424</upd>
+        <nid>1062</nid>
+    </item>
+    <item>
+        <node_title>創世記 聖經信息查經班－西北區</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>7</tid>
+            </item>
+        </cat>
+        <des>
+            <p>《創世記》是聖經第一卷書。是我們信仰的基礎。這書卷回答了人生幾個重要的問題：人從哪裡來？人活著是為什麼？人死後會往哪裡去？<br /> 神創造人後，把我們放在一個極崇高的地位，可惜人犯罪，不但不能活出神給人的計劃與心意，還要面對永遠的滅亡。《創世記》啓示了神對人的愛及祂給人的拯救計劃與福氣。沒有《創世記》，人是沒有辦法明白為什麼要相信耶穌。《創世記》是我們信仰的重要基礎，是每個基督徒必讀的一卷書。</p> <p>每周一次，共11周</p> <p>教師： 鄧英善牧師</p> <p>費用：材枓費AUD$10 (新學員註冊費AUD$10)</p> <p><span>證書：</span><span>聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢</span></p> <p>查經模式</p> <ul><li>使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點</li> <li>天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的</li> <li>分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵</li> <li>導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長</li> </ul><p><span>報名手續</span></p> <ol><li>電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)</li> <li>網上直接報名，開課時補填報名表格及邀交上述費用</li> </ol><p>查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org</p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-start">1400632200</span> to <span class="date-display-end">1406687400</span>
+        </tim>
+        <ven>
+            播道會活石堂, 5-7 Castle Hill Rd., West Pennant Hills, NSW 2125
+        </ven>
+        <hos is_array="true">
+            <item>
+                <tid>57</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1394081854</upd>
+        <nid>1063</nid>
+    </item>
+    <item>
+        <node_title>「相處難，同住更難」傳統華人文化對家庭的影響</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>2</tid>
+            </item>
+            <item>
+                <tid>5</tid>
+            </item>
+        </cat>
+        <des><p>查詢：(02) 9211 9988</p></des>
+        <pos/>
+        <tim>
+            <span class="date-display-start">1401094800</span> to <span class="date-display-end">1402914600</span>
+        </tim>
+        <ven>17 Valentine St, Sydney NSW</ven>
+        <hos is_array="true">
+            <item>
+                <tid>18</tid>
+            </item>
+            <item>
+                <tid>56</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1393472625</upd>
+        <nid>1052</nid>
+    </item>
+    <item>
+        <node_title>《下一站．再愛你》澳洲雪梨首映禮: 國語場</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>1</tid>
+            </item>
+        </cat>
+        <des>
+            <p>中國首套基督教電影 世界首映第一站: 澳洲雪梨首映禮<br /> Movie Premiere - Next Station I Love You</p> <p>講員：小金子 (喬宏太太) 基督徒演員劉鑫小姐<br /> 國語對白配字幕</p> <p>電影根據澳洲雪梨北雪梨華人宣道會陳淑賢姊妹 (Tracy) 生前的真實經歷改編，影片的女主角Tracy患了骨癌。她在面對死亡威脅的時候，靠著上帝，仍然活得平安喜樂，仍然用她的愛努力地攙扶著身邊的病友、醫生、以及丈夫、朋友，甚至所有的人。</p> <p><a href="https://www.youtube.com/watch?feature=player_embedded&amp;v=bCLXon2yjAw">https://www.youtube.com/watch?feature=player_embedded&amp;v=bCLXon2yjAw</a></p>
+        </des>
+        <pos>
+            <img src="http://sccca.org.au/sites/default/files/media_next_station_love.jpg" width="1193" height="1677" alt="" />
+        </pos>
+        <tim>
+            <span class="date-display-start">1401512400</span> to <span class="date-display-end">1401519600</span>
+        </tim>
+        <ven>
+            Sydney Olympic Park Sports Centre, 1 Olympic Boulevard Sydney 2127
+        </ven>
+        <hos is_array="true">
+            <item>
+                <tid>17</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>15</tid>
+            </item>
+        </lan>
+        <upd>1396309976</upd>
+        <nid>1073</nid>
+    </item>
+    <item>
+        <node_title>《下一站．再愛你》澳洲雪梨首映禮: 粵語場</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>1</tid>
+            </item>
+        </cat>
+        <des>
+            <p>中國首套基督教電影 世界首映第一站: 澳洲雪梨首映禮<br /> Movie Premiere - Next Station I Love You</p> <p>講員：小金子 (喬宏太太) 基督徒演員劉鑫小姐<br /> 國語對白配字幕</p> <p>電影根據澳洲雪梨北雪梨華人宣道會陳淑賢姊妹 (Tracy) 生前的真實經歷改編，影片的女主角Tracy患了骨癌。她在面對死亡威脅的時候，靠著上帝，仍然活得平安喜樂，仍然用她的愛努力地攙扶著身邊的病友、醫生、以及丈夫、朋友，甚至所有的人。</p> <p><a href="https://www.youtube.com/watch?feature=player_embedded&amp;v=bCLXon2yjAw">https://www.youtube.com/watch?feature=player_embedded&amp;v=bCLXon2yjAw</a></p>
+        </des>
+        <pos>
+            <img src="http://sccca.org.au/sites/default/files/media_next_station_love.jpg" width="1193" height="1677" alt="" />
+        </pos>
+        <tim>
+            <span class="date-display-single">1401526800</span>
+        </tim>
+        <ven>
+            Sydney Olympic Park Sports Centre, 1 Olympic Boulevard Sydney 2127
+        </ven>
+        <hos is_array="true">
+            <item>
+                <tid>17</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1396310039</upd>
+        <nid>1074</nid>
+    </item>
+    <item>
+        <node_title>恩愛夫婦營（粵語）</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>2</tid>
+            </item>
+            <item>
+                <tid>5</tid>
+            </item>
+        </cat>
+        <des>
+            <p>主辦: 澳洲家庭更新協會</p> <p>聯絡: (02) 9715 6923</p> <p>網頁: <a href="http://www.mffc.org.au">http://www.mffc.org.au</a></p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-start">1402099200</span> to <span class="date-display-end">1402293600</span>
+        </tim>
+        <ven>
+            Merroo Christian Centre, 182 Mill Rd, Kurrajong 2758
+        </ven>
+        <hos/>
+        <lan/>
+        <upd>1377760130</upd>
+        <nid>948</nid>
+    </item>
+    <item>
+        <node_title>「再闖高峰: 你的下半場」男士聚餐與專題講座</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>11</tid>
+            </item>
+            <item>
+                <tid>10</tid>
+            </item>
+        </cat>
+        <des>
+            <p>講員：梁明生牧師 Rev Ming Leung</p> <ul><li>澳洲華人教牧神學院教務長</li> <li>梁牧師對男士事工有特别興趣和研究</li> </ul><p>6pm恭候 7pm 正式開始</p> <p>餐費：$30.00<br /> 有意參加者，請電 (02) 9211 9988</p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-single">1403164800</span>
+        </tim>
+        <ven>
+            Ryde-Eastwood Leagues Club, 117 Ryedale Rd, West Ryde NSW 2114
+        </ven>
+        <hos is_array="true">
+            <item>
+                <tid>18</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1393465604</upd>
+        <nid>1037</nid>
+    </item>
+    <item>
+        <node_title>再見拖延</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>11</tid>
+            </item>
+            <item>
+                <tid>5</tid>
+            </item>
+        </cat>
+        <des>
+            <p>「明天再做吧！」拖延是現代人最常見的行為問題之一，亦是壓力、焦慮的主要來源。這工作坊為你解拆拖延的成因、對心智和腦部的影響，以及與成長經歷的關係；並提供克服拖延的負面影響的策略和方法。</p> <p>講員：Gordon Lee</p> <p>查詢：(02) 9211 9988</p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-start">1403688600</span> to <span class="date-display-end">1403695800</span>
+        </tim>
+        <ven>
+            First Light Care Sydney City Centre, 2nd Fl, 627 George St, Haymarket NSW
+        </ven>
+        <hos is_array="true">
+            <item>
+                <tid>18</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1393465796</upd>
+        <nid>1051</nid>
+    </item>
+    <item>
+        <node_title>「身心醫治　全人關懷」癌病之綜合治療及護理</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>11</tid>
+            </item>
+        </cat>
+        <des>
+            <p>題目：</p> <ul><li>乙肝丙與癌何干？（粵語）林偉濤副教授 A/Prof Vincent Lam</li> <li>舌尖上之癌症－營養篇（粵語）何敏營養師 Ms Mandy Ho</li> <li>癌症指標知多少（粵語）李超浩醫生 Dr Stephen Li</li> </ul><p>不設門票 先到先得 免費入場</p> <p>查詢：9267 5977（潘小姐）</p> <p>溫馨提示：敬請注意，本講座所提供之所有資訊（包括問答時間）只可作參考之用，並不能以此構成任何醫患之關係。若與會人士以此自行作出任何臨床決定而未經閣下之主診醫生<span>或專業健康從業人員認可，康恩關懷中心，所有講員及其所屬之專業學會一概不負上任何法律上之責任。</span></p>
+        </des>
+        <pos>
+            <img src="http://sccca.org.au/sites/default/files/cancare_events.jpg" width="1148" height="1639" alt="" />
+        </pos>
+        <tim>
+            <span class="date-display-start">1403928000</span> to <span class="date-display-end">1403938800</span>
+        </tim>
+        <ven>華梨華人宣道會希伯崙堂, 51 Hawkesbury Rd., Westmead</ven>
+        <hos is_array="true">
+            <item>
+                <tid>62</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1396854592</upd>
+        <nid>1079</nid>
+    </item>
+    <item>
+        <node_title>「人生意義：尋找人生真諦與目的」－男士守望小組</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>11</tid>
+            </item>
+            <item>
+                <tid>5</tid>
+            </item>
+        </cat>
+        <des>
+            <p>晨光男士守望小組 2014</p> <p>坦誠分享、彼此支持及禱告，學習個人生命成長及更新</p> <p><span>2014 專題探討: 《鏡中的男人》- 認清自己的身份</span></p> <p>《鏡中的男人》作者派特前半生成功地創業，多年擔任59家公司與合資公司總裁或合夥人。他撰寫了《鏡中的男人》，分享他尋求人生意義、解決人際關係、財務、時間、性情上、誠實正直等問題的過程中怎樣與神建立更深刻關係。中國男人愛慨嘆“人在江湖，身不由己”。派特則身體力行，91年他賣掉自己的企業，建立了專門幫助事業成功的男士在職場內外，有目標，有意義地邁向成熟的福音工作。</p>
+        </des>
+        <pos/>
+        <tim>
+            <span class="date-display-start">1404984600</span> to <span class="date-display-end">1404993600</span>
+        </tim>
+        <ven>7 Crown Street, Harris Park NSW</ven>
+        <hos is_array="true">
+            <item>
+                <tid>18</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1391637318</upd>
+        <nid>1033</nid>
+    </item>
+    <item>
+        <node_title>「守主場 · 作客攻」CCYSC 粵語 2014</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>6</tid>
+            </item>
+            <item>
+                <tid>8</tid>
+            </item>
+        </cat>
+        <des>
+            <p>講員：蔡元雲醫生 Dr Philemon Choi</p> <p>Camp Fee: $225 (Early Bird) / $240 (Normal Fee)</p> <p>Registration Deadline: 18 May 2014 (Early Bird) / 1 July 2014 (Normal Fee)</p> <p>Online Registration：<a href="http://ccycs.org">http://ccycs.org</a></p> <p> </p>
+        </des>
+        <pos>
+            <img src="http://sccca.org.au/sites/default/files/ccysc2014cantonese.PNG" width="900" height="287" alt="" />
+        </pos>
+        <tim>
+            <span class="date-display-start">1405432800</span> to <span class="date-display-end">1405692000</span>
+        </tim>
+        <ven>The Tops Conference Centre, Stanwell Tops NSW 2508</ven>
+        <hos is_array="true">
+            <item>
+                <tid>37</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>13</tid>
+            </item>
+        </lan>
+        <upd>1396310383</upd>
+        <nid>947</nid>
+    </item>
+    <item>
+        <node_title>「主角，主脚」CCYSC 國語 2014</node_title>
+        <cat is_array="true">
+            <item>
+                <tid>6</tid>
+            </item>
+            <item>
+                <tid>8</tid>
+            </item>
+        </cat>
+        <des>
+            <p>Speaker: 蔡元雲醫生 Dr Philemon Choi </p> <p>Camp Fee: $190 (Early Bird) / $210 (Normal Fee)</p> <p>Registration Deadline: 18 May 2014 (Early Bird) / 1 July 2014 (Normal Fee)</p> <p>Online Registration：<a href="http://ccycs.org">http://ccycs.org</a></p> <div> </div>
+        </des>
+        <pos>
+            <img src="http://sccca.org.au/sites/default/files/ccysc2014mandarin.PNG" width="900" height="288" alt="" />
+        </pos>
+        <tim>
+            <span class="date-display-start">1405519200</span> to <span class="date-display-end">1405692000</span>
+        </tim>
+        <ven>The Tops Conference Centre, Stanwell Tops NSW 2508</ven>
+        <hos is_array="true">
+            <item>
+                <tid>37</tid>
+            </item>
+        </hos>
+        <lan is_array="true">
+            <item>
+                <tid>15</tid>
+            </item>
+        </lan>
+        <upd>1396310420</upd>
+        <nid>1002</nid>
+    </item>
+</result>

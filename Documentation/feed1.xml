@@ -1,0 +1,804 @@
+<!-- RSS feed from http://sccca.org.au/events130315e/feed -->
+
+<!-- Auto generated schema -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2005/Atom" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="link">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute type="xs:string" name="rel"/>
+                    <xs:attribute type="xs:anyURI" name="href"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+<!-- RSS content -->
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xml:base="http://sccca.org.au/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel> <title>公開聚會</title>
+    <description>鼓吹、推動及支持向澳洲及海外華人傳福音，聯繫雪梨眾華人教會，策劃和帶動聯合事工和活動，以滿足雪梨華人的身、心、靈需要</description>
+    <link>http://sccca.org.au/</link>
+    <atom:link rel="self" href="http://sccca.org.au/events130315e/feed" />
+
+    <!-- EVENT *********************************************************************************** -->
+    <item>
+        <title>「流金歲月」夫婦公開講座</title>
+        <link>http://sccca.org.au/node/1046</link>
+        <description>&lt;p&gt;&lt;span&gt;講員：梁燕城博士&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;文化更新研究中心院長，著名中國哲學學者、時事評論家、曾任香港浸信會學院高級講師，並出版過多本探討哲學及基督教書籍。&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;手牽手重温戀愛、空巢生活更精采&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;莫慶堯博士紀念公開講座&lt;/p&gt;
+            
+            &lt;p&gt;免費入場&lt;/p&gt;</description>
+        <author>Canberra</author>
+        <category>Family</category>
+        <comments>1398693600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391746700</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>夫婦進深營（華語）</title>
+        <link>http://sccca.org.au/node/1047</link>
+        <description>&lt;p&gt;報名查詢：(02)9715 6923 &lt;a href=&quot;mailto:info@mffc.org.au&quot;&gt;info@mffc.org.au&lt;/a&gt;&lt;br /&gt;
+            費用：$560&lt;/p&gt;
+            
+            &lt;p&gt; &lt;/p&gt;</description>
+        <author>Apollo Resort, Wamberal, NSW</author>
+        <category>Family</category>
+        <comments>1398952800 to 1399125600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391746786</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「中西教養子女方法的融匯貫通」 親子公開講座</title>
+        <link>http://sccca.org.au/node/1044</link>
+        <description>&lt;p&gt;莫慶堯博士紀念公開講座&lt;/p&gt;
+            
+            &lt;p&gt;講員：梁燕城博士&lt;br /&gt;
+            文化更新研究中心院長，著名中國哲學學者、時事評論家、曾任香港浸信會學院高級講師，並出版過多本探討哲學及基督教書籍。&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;如何承傳優良的中國傳統文化予下一代&lt;/li&gt;
+            &lt;li&gt;如何集中西文化之所長去培育敬虔的子女&lt;/li&gt;
+            &lt;/ul&gt;</description>
+        <author>西雪梨華人基督教會, 90 Homebush Road, Strathfield 2135</author>
+        <category>Family</category>
+        <comments>1399023000 to 1399030200</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/mffc2014.jpg" length="157046" type="image/jpeg" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391746472</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「異國情鴛驚夢散」夫婦公開講座</title>
+        <link>http://sccca.org.au/node/1045</link>
+        <description>&lt;p&gt;莫慶堯博士紀念公開講座&lt;/p&gt;
+            
+            &lt;p&gt;講員：梁燕城博士&lt;br /&gt;
+            文化更新研究中心院長，著名中國哲學學者、時事評論家、曾任香港浸信會學院高級講師，並出版過多本探討哲學及基督教書籍。&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;下一代跟本地人通婚所面對的衝擊&lt;/li&gt;
+            &lt;li&gt;如何增進異國婚姻的姻親和婆媳關係&lt;br /&gt;&lt;/li&gt;
+            &lt;/ul&gt;</description>
+        <author>中央浸信會, 619 George Street, Haymarket 2000</author>
+        <category>Family</category>
+        <comments>1399176000 to 1399183200</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/mffc2014.jpg" length="157046" type="image/jpeg" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391746575</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** --> <!-- for some reason this shows mffc2014 as well -->
+    <item> <title>「恪守《聖經》的基督徒或人文基督徒？」－男士守望小組</title>
+        <link>http://sccca.org.au/node/1032</link>
+        <description>&lt;p&gt;晨光男士守望小組 2014&lt;/p&gt;
+            
+            &lt;p&gt;坦誠分享、彼此支持及禱告，學習個人生命成長及更新&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;2014 專題探討: 《鏡中的男人》- 認清自己的身份&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;《鏡中的男人》作者派特前半生成功地創業，多年擔任59家公司與合資公司總裁或合夥人。他撰寫了《鏡中的男人》，分享他尋求人生意義、解決人際關係、財務、時間、性情上、誠實正直等問題的過程中怎樣與神建立更深刻關係。中國男人愛慨嘆“人在江湖，身不由己”。派特則身體力行，91年他賣掉自己的企業，建立了專門幫助事業成功的男士在職場內外，有目標，有意義地邁向成熟的福音工作。&lt;/p&gt;</description>
+        <author>7 Crown Street, Harris Park NSW</author>
+        <category>Caring, Relationship</category>
+        <comments>1399541400 to 1399550400</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391637291</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** --> <!-- for some reason this shows mffc2014 as well -->
+    <item> <title>「佛教信些什麼？」神學講座</title>
+        <link>http://sccca.org.au/node/1023</link>
+        <description>&lt;p&gt;講員：池耀興博士&lt;/p&gt;
+            
+            &lt;p&gt; &lt;/p&gt;</description>
+        <category>Evangelical, Revival</category>
+        <comments>1399800600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1390708915</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「身心醫治　全人關懷」癌病之綜合治療及護理</title>
+        <link>http://sccca.org.au/node/1078</link>
+        <description>&lt;p&gt;題目：&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;家庭醫生在癌症治療中之角色（粵語）梁福榮醫生 Dr Fred Leung&lt;/li&gt;
+            &lt;li&gt;大腸癌－預防與治療（粵語）黃嘉羊醫生 Dr Mark Wong&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;不設門票 先到先得 免費入場&lt;/p&gt;
+            
+            &lt;p&gt;查詢：9267 5977（潘小姐）&lt;/p&gt;
+            
+            &lt;p&gt;溫馨提示：敬請注意，本講座所提供之所有資訊（包括問答時間）只可作參考之用，並不能以此構成任何醫患之關係。若與會人士以此自行作出任何臨床決定而未經閣下之主診醫生或專業健康從業人員認可，康恩關懷中心，所有講員及其所屬之專業學會一概不負上任何法律上之責任。&lt;/p&gt;
+            
+            &lt;p&gt; &lt;/p&gt;</description>
+        <author>雪梨西區基督教會, 3A Provincial St., Auburn</author>
+        <category>Caring</category>
+        <comments>1400299200 to 1400310000</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/cancare_events.jpg" length="688099" type="image/jpeg" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1396854602</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>創世記 聖經信息查經班－西南區</title>
+        <link>http://sccca.org.au/node/1061</link>
+        <description>&lt;p&gt;《創世記》是聖經第一卷書。是我們信仰的基礎。這書卷回答了人生幾個重要的問題：人從哪裡來？人活著是為什麼？人死後會往哪裡去？&lt;br /&gt;
+            神創造人後，把我們放在一個極崇高的地位，可惜人犯罪，不但不能活出神給人的計劃與心意，還要面對永遠的滅亡。《創世記》啓示了神對人的愛及祂給人的拯救計劃與福氣。沒有《創世記》，人是沒有辦法明白為什麼要相信耶穌。《創世記》是我們信仰的重要基礎，是每個基督徒必讀的一卷書。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;教師： 鄧英善牧師&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>西雪梨華人基督教會, 90 Homebush Rd., Strathfield, NSW 2135</author>
+        <category>Training</category>
+        <comments>1400459400 to 1406514600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081407</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>創世記 聖經信息查經班－北區</title>
+        <link>http://sccca.org.au/node/1062</link>
+        <description>&lt;p&gt;《創世記》是聖經第一卷書。是我們信仰的基礎。這書卷回答了人生幾個重要的問題：人從哪裡來？人活著是為什麼？人死後會往哪裡去？&lt;br /&gt;
+            神創造人後，把我們放在一個極崇高的地位，可惜人犯罪，不但不能活出神給人的計劃與心意，還要面對永遠的滅亡。《創世記》啓示了神對人的愛及祂給人的拯救計劃與福氣。沒有《創世記》，人是沒有辦法明白為什麼要相信耶穌。《創世記》是我們信仰的重要基礎，是每個基督徒必讀的一卷書。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt;教師： 鄧英善牧師&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>Chatswood Church of Christ, 365 Victoria Ave., Chatswood, NSW 2067</author>
+        <category>Training</category>
+        <comments>1400491800 to 1406547000</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081424</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>創世記 聖經信息查經班－西北區</title>
+        <link>http://sccca.org.au/node/1063</link>
+        <description>&lt;p&gt;《創世記》是聖經第一卷書。是我們信仰的基礎。這書卷回答了人生幾個重要的問題：人從哪裡來？人活著是為什麼？人死後會往哪裡去？&lt;br /&gt;
+            神創造人後，把我們放在一個極崇高的地位，可惜人犯罪，不但不能活出神給人的計劃與心意，還要面對永遠的滅亡。《創世記》啓示了神對人的愛及祂給人的拯救計劃與福氣。沒有《創世記》，人是沒有辦法明白為什麼要相信耶穌。《創世記》是我們信仰的重要基礎，是每個基督徒必讀的一卷書。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt;教師： 鄧英善牧師&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>播道會活石堂, 5-7 Castle Hill Rd., West Pennant Hills, NSW 2125</author>
+        <category>Training</category>
+        <comments>1400632200 to 1406687400</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081854</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「相處難，同住更難」傳統華人文化對家庭的影響</title>
+        <link>http://sccca.org.au/node/1052</link>
+        <description>&lt;p&gt;查詢：(02) 9211 9988&lt;/p&gt;</description>
+        <author>17 Valentine St, Sydney NSW</author>
+        <category>Family, Relationship</category>
+        <comments>1401094800 to 1402914600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1393472625</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>《下一站．再愛你》澳洲雪梨首映禮: 國語場</title>
+        <link>http://sccca.org.au/node/1073</link>
+        <description>&lt;p&gt;中國首套基督教電影 世界首映第一站: 澳洲雪梨首映禮&lt;br /&gt;
+            Movie Premiere - Next Station I Love You&lt;/p&gt;
+            
+            &lt;p&gt;講員：小金子 (喬宏太太) 基督徒演員劉鑫小姐&lt;br /&gt;
+            國語對白配字幕&lt;/p&gt;
+            
+            &lt;p&gt;電影根據澳洲雪梨北雪梨華人宣道會陳淑賢姊妹 (Tracy) 生前的真實經歷改編，影片的女主角Tracy患了骨癌。她在面對死亡威脅的時候，靠著上帝，仍然活得平安喜樂，仍然用她的愛努力地攙扶著身邊的病友、醫生、以及丈夫、朋友，甚至所有的人。&lt;/p&gt;
+            
+            &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?feature=player_embedded&amp;amp;v=bCLXon2yjAw&quot;&gt;https://www.youtube.com/watch?feature=player_embedded&amp;amp;v=bCLXon2yjAw&lt;/a&gt;&lt;/p&gt;</description>
+        <author>Sydney Olympic Park Sports Centre, 1 Olympic Boulevard Sydney 2127</author>
+        <category>Evangelical</category>
+        <comments>1401512400 to 1401519600</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/media_next_station_love.jpg" length="370836" type="image/jpeg" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1396309976</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>《下一站．再愛你》澳洲雪梨首映禮: 粵語場</title>
+        <link>http://sccca.org.au/node/1074</link>
+        <description>&lt;p&gt;中國首套基督教電影 世界首映第一站: 澳洲雪梨首映禮&lt;br /&gt;
+            Movie Premiere - Next Station I Love You&lt;/p&gt;
+            
+            &lt;p&gt;講員：小金子 (喬宏太太) 基督徒演員劉鑫小姐&lt;br /&gt;
+            國語對白配字幕&lt;/p&gt;
+            
+            &lt;p&gt;電影根據澳洲雪梨北雪梨華人宣道會陳淑賢姊妹 (Tracy) 生前的真實經歷改編，影片的女主角Tracy患了骨癌。她在面對死亡威脅的時候，靠著上帝，仍然活得平安喜樂，仍然用她的愛努力地攙扶著身邊的病友、醫生、以及丈夫、朋友，甚至所有的人。&lt;/p&gt;
+            
+            &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?feature=player_embedded&amp;amp;v=bCLXon2yjAw&quot;&gt;https://www.youtube.com/watch?feature=player_embedded&amp;amp;v=bCLXon2yjAw&lt;/a&gt;&lt;/p&gt;</description>
+        <author>Sydney Olympic Park Sports Centre, 1 Olympic Boulevard Sydney 2127</author>
+        <category>Evangelical</category>
+        <comments>1401526800</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/media_next_station_love.jpg" length="370836" type="image/jpeg" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1396310039</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <item> <title>恩愛夫婦營（粵語）</title>
+        <link>http://sccca.org.au/node/948</link>
+        <description>&lt;p&gt;主辦: 澳洲家庭更新協會&lt;/p&gt;
+            &lt;p&gt;聯絡: (02) 9715 6923&lt;/p&gt;
+            &lt;p&gt;網頁: &lt;a href=&quot;http://www.mffc.org.au&quot;&gt;http://www.mffc.org.au&lt;/a&gt;&lt;/p&gt;</description>
+        <author>Merroo Christian Centre, 182 Mill Rd, Kurrajong 2758</author>
+        <category>Family, Relationship</category>
+        <comments>1402099200 to 1402293600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1377760130</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「再闖高峰: 你的下半場」男士聚餐與專題講座</title>
+        <link>http://sccca.org.au/node/1037</link>
+        <description>&lt;p&gt;講員：梁明生牧師 Rev Ming Leung&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;澳洲華人教牧神學院教務長&lt;/li&gt;
+            &lt;li&gt;梁牧師對男士事工有特别興趣和研究&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;6pm恭候 7pm 正式開始&lt;/p&gt;
+            
+            &lt;p&gt;餐費：$30.00&lt;br /&gt;
+            有意參加者，請電 (02) 9211 9988&lt;/p&gt;</description>
+        <author>Ryde-Eastwood Leagues Club, 117 Ryedale Rd, West Ryde NSW 2114</author>
+        <category>Caring, Other</category>
+        <comments>1403164800</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1393465604</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>再見拖延</title>
+        <link>http://sccca.org.au/node/1051</link>
+        <description>&lt;p&gt;「明天再做吧！」拖延是現代人最常見的行為問題之一，亦是壓力、焦慮的主要來源。這工作坊為你解拆拖延的成因、對心智和腦部的影響，以及與成長經歷的關係；並提供克服拖延的負面影響的策略和方法。&lt;/p&gt;
+            
+            &lt;p&gt;講員：Gordon Lee&lt;/p&gt;
+            
+            &lt;p&gt;查詢：(02) 9211 9988&lt;/p&gt;</description>
+        <author>First Light Care Sydney City Centre, 2nd Fl, 627 George St, Haymarket NSW</author>
+        <category>Caring, Relationship</category>
+        <comments>1403688600 to 1403695800</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1393465796</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「身心醫治　全人關懷」癌病之綜合治療及護理</title>
+        <link>http://sccca.org.au/node/1079</link>
+        <description>&lt;p&gt;題目：&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;乙肝丙與癌何干？（粵語）林偉濤副教授 A/Prof Vincent Lam&lt;/li&gt;
+            &lt;li&gt;舌尖上之癌症－營養篇（粵語）何敏營養師 Ms Mandy Ho&lt;/li&gt;
+            &lt;li&gt;癌症指標知多少（粵語）李超浩醫生 Dr Stephen Li&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;不設門票 先到先得 免費入場&lt;/p&gt;
+            
+            &lt;p&gt;查詢：9267 5977（潘小姐）&lt;/p&gt;
+            
+            &lt;p&gt;溫馨提示：敬請注意，本講座所提供之所有資訊（包括問答時間）只可作參考之用，並不能以此構成任何醫患之關係。若與會人士以此自行作出任何臨床決定而未經閣下之主診醫生&lt;span&gt;或專業健康從業人員認可，康恩關懷中心，所有講員及其所屬之專業學會一概不負上任何法律上之責任。&lt;/span&gt;&lt;/p&gt;</description>
+        <author>華梨華人宣道會希伯崙堂, 51 Hawkesbury Rd., Westmead</author>
+        <category>Caring</category>
+        <comments>1403928000 to 1403938800</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/cancare_events.jpg" length="688099" type="image/jpeg" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1396854592</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「人生意義：尋找人生真諦與目的」－男士守望小組</title>
+        <link>http://sccca.org.au/node/1033</link>
+        <description>&lt;p&gt;晨光男士守望小組 2014&lt;/p&gt;
+            
+            &lt;p&gt;坦誠分享、彼此支持及禱告，學習個人生命成長及更新&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;2014 專題探討: 《鏡中的男人》- 認清自己的身份&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;《鏡中的男人》作者派特前半生成功地創業，多年擔任59家公司與合資公司總裁或合夥人。他撰寫了《鏡中的男人》，分享他尋求人生意義、解決人際關係、財務、時間、性情上、誠實正直等問題的過程中怎樣與神建立更深刻關係。中國男人愛慨嘆“人在江湖，身不由己”。派特則身體力行，91年他賣掉自己的企業，建立了專門幫助事業成功的男士在職場內外，有目標，有意義地邁向成熟的福音工作。&lt;/p&gt;</description>
+        <author>7 Crown Street, Harris Park NSW</author>
+        <category>Caring, Relationship</category>
+        <comments>1404984600 to 1404993600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391637318</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「守主場 · 作客攻」CCYSC 粵語 2014</title>
+        <link>http://sccca.org.au/node/947</link>
+        <description>&lt;p&gt;講員：蔡元雲醫生 Dr Philemon Choi&lt;/p&gt;
+            
+            &lt;p&gt;Camp Fee: $225 (Early Bird) / $240 (Normal Fee)&lt;/p&gt;
+            
+            &lt;p&gt;Registration Deadline: 18 May 2014 (Early Bird) / 1 July 2014 (Normal Fee)&lt;/p&gt;
+            
+            &lt;p&gt;Online Registration：&lt;a href=&quot;http://ccycs.org&quot;&gt;http://ccycs.org&lt;/a&gt;&lt;/p&gt;
+            
+            &lt;p&gt; &lt;/p&gt;</description>
+        <author>The Tops Conference Centre, Stanwell Tops NSW 2508</author>
+        <category>Revival, Youth</category>
+        <comments>1405432800 to 1405692000</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/ccysc2014cantonese.PNG" length="101196" type="image/png" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1396310383</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「主角，主脚」CCYSC 國語 2014</title>
+        <link>http://sccca.org.au/node/1002</link>
+        <description>&lt;p&gt;Speaker: 蔡元雲醫生 Dr Philemon Choi &lt;/p&gt;
+            
+            &lt;p&gt;Camp Fee: $190 (Early Bird) / $210 (Normal Fee)&lt;/p&gt;
+            
+            &lt;p&gt;Registration Deadline: 18 May 2014 (Early Bird) / 1 July 2014 (Normal Fee)&lt;/p&gt;
+            
+            &lt;p&gt;Online Registration：&lt;a href=&quot;http://ccycs.org&quot;&gt;http://ccycs.org&lt;/a&gt;&lt;/p&gt;
+            
+            &lt;div&gt; &lt;/div&gt;</description>
+        <author>The Tops Conference Centre, Stanwell Tops NSW 2508</author>
+        <category>Revival, Youth</category>
+        <comments>1405519200 to 1405692000</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/ccysc2014mandarin.PNG" length="279522" type="image/png" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1396310420</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「 愛，一直都在」 Love Is Always There日場</title>
+        <link>http://sccca.org.au/node/1020</link>
+        <description>&lt;p&gt;兩代衝突的出路－移民家庭往往有兩代衝突問題，跟父母爭執，頂撞，甚至互不瞅睬經常發生。怎樣才可突破這僵局，重建溫馨家庭？&lt;/p&gt;
+            
+            &lt;p&gt;&lt;iframe frameborder=&quot;0&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/90737935?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;500&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+            
+            &lt;p&gt;&lt;iframe frameborder=&quot;0&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/90735971?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;500&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+            
+            &lt;p&gt;&lt;iframe frameborder=&quot;0&quot; height=&quot;281&quot; src=&quot;http://player.vimeo.com/video/90734827?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;500&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+            
+            &lt;p&gt;SCCCA主辦：音樂創作劇、生命分享會（粵語）&lt;br /&gt;
+            講員：蔡元雲醫生－「突破」榮譽總幹事，突破雜誌創辦人，香港政府青少年政策智囊&lt;/p&gt;
+            
+            &lt;p&gt;嘉賓：蔡暉明，張瑪莉&lt;/p&gt;
+            
+            &lt;p&gt;音樂：頌恩旋律&lt;br /&gt;
+            話劇：DrEAM&lt;br /&gt;
+            附有兒童節目，備兒童活動&lt;/p&gt;</description>
+        <author>Sydney Town Hall, 483 George Street Sydney NSW 2000</author>
+        <category>Evangelical, Youth</category>
+        <comments>1405746000</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/love_always2014.jpg" length="603149" type="image/jpeg" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1397107390</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「 愛，一直都在」 Love Is Always There夜場</title>
+        <link>http://sccca.org.au/node/1076</link>
+        <description>&lt;p&gt;&lt;span&gt;兩代衝突的出路－&lt;/span&gt;&lt;span&gt;移民家庭往往有兩代衝突問題，跟父母爭執，頂撞，甚至互不瞅睬經常發生。怎樣才可突破這僵局，重建溫馨家庭？&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;&lt;iframe src=&quot;http://player.vimeo.com/video/90737935?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;iframe src=&quot;http://player.vimeo.com/video/90735971?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;iframe src=&quot;http://player.vimeo.com/video/90734827?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+            
+            &lt;p&gt;SCCCA主辦：音樂創作劇、生命分享會（粵語）&lt;br /&gt;
+            講員：蔡元雲醫生－「突破」榮譽總幹事，突破雜誌創辦人，香港政府青少年政策智囊&lt;/p&gt;
+            
+            &lt;p&gt;嘉賓：蔡暉明，張瑪莉&lt;/p&gt;
+            
+            &lt;p&gt;音樂：頌恩旋律&lt;br /&gt;
+            話劇：DrEAM&lt;br /&gt;
+            附有兒童節目，備兒童活動&lt;/p&gt;</description>
+        <author>Sydney Town Hall, 483 George Street Sydney NSW 2000</author>
+        <category>Evangelical, Youth</category>
+        <comments>1405760400</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/love_always2014.jpg" length="603149" type="image/jpeg" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1397107444</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「身心醫治　全人關懷」癌病之綜合治療及護理</title>
+        <link>http://sccca.org.au/node/1080</link>
+        <description>&lt;p&gt;題目：&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;不可輕看胰臟癌（粵語）Dr Lawrence Yuen&lt;/li&gt;
+            &lt;li&gt;兒科常見之癌症（粵語）劉夢珊醫生 Dr Loretta Lau&lt;/li&gt;
+            &lt;li&gt;中醫養生食療與癌症（粵語）林奇恩醫生 Dr Danforn Lim&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;不設門票 先到先得 免費入場&lt;/p&gt;
+            
+            &lt;p&gt;查詢：9267 5977（潘小姐）&lt;/p&gt;
+            
+            &lt;p&gt;溫馨提示：敬請注意，本講座所提供之所有資訊（包括問答時間）只可作參考之用，並不能以此構成任何醫患之關係。若與會人士以此自行作出任何臨床決定而未經閣下之主診醫生&lt;span&gt;或專業健康從業人員認可，康恩關懷中心，所有講員及其所屬之專業學會一概不負上任何法律上之責任。&lt;/span&gt;&lt;/p&gt;</description>
+        <author>雪梨華人基督教會, 100 Alfred St., Milson&amp;#039;s Point</author>
+        <category>Caring</category>
+        <comments>1406347200 to 1406358000</comments>
+        <enclosure url="http://sccca.org.au/sites/default/files/cancare_events.jpg" length="688099" type="image/jpeg" />
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1396854588</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>申命記 聖經信息查經班－西南區</title>
+        <link>http://sccca.org.au/node/1064</link>
+        <description>&lt;p&gt;《申命記》是以色列人出埃及後，在曠野漂流了四十年的末期，進入迦南地前，摩西把神給他們的律法重述一遍。律法的內容與四十年前出埃及後，在西乃山所賜的律法，內容有許多相似；但聽眾卻已是不同。出埃及時二十歲以上的男性都倒斃在曠野，失去進入迦南地的福氣，因為他們不信神的應許。摩西要把神的律法向這新的一代重述一遍，可見神的話語與他們在迦南地的生活之間有很重要的聯繫。《申命記》强調要聽（認識）神的話，要把神的話行出來賓行道）。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;教師： 鄧英善牧師&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>西雪梨華人基督教會, 90 Homebush Rd., Strathfield, NSW 2135</author>
+        <category>Training</category>
+        <comments>1407717000 to 1415583000</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081135</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>申命記 聖經信息查經班－西區</title>
+        <link>http://sccca.org.au/node/1065</link>
+        <description>&lt;p&gt;《申命記》是以色列人出埃及後，在曠野漂流了四十年的末期，進入迦南地前，摩西把神給他們的律法重述一遍。律法的內容與四十年前出埃及後，在西乃山所賜的律法，內容有許多相似；但聽眾卻已是不同。出埃及時二十歲以上的男性都倒斃在曠野，失去進入迦南地的福氣，因為他們不信神的應許。摩西要把神的律法向這新的一代重述一遍，可見神的話語與他們在迦南地的生活之間有很重要的聯繫。《申命記》强調要聽（認識）神的話，要把神的話行出來賓行道）。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt; &lt;/p&gt;
+            
+            &lt;p&gt;教師： 鄧英善牧師&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>宣道會希伯倫堂, 51 Hawkesbury Rd., Westmead, NSW 2145</author>
+        <category>Training</category>
+        <comments>1407749400 to 1415615400</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081210</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>申命記 聖經信息查經班－北區夜間</title>
+        <link>http://sccca.org.au/node/1067</link>
+        <description>&lt;p&gt;《申命記》是以色列人出埃及後，在曠野漂流了四十年的末期，進入迦南地前，摩西把神給他們的律法重述一遍。律法的內容與四十年前出埃及後，在西乃山所賜的律法，內容有許多相似；但聽眾卻已是不同。出埃及時二十歲以上的男性都倒斃在曠野，失去進入迦南地的福氣，因為他們不信神的應許。摩西要把神的律法向這新的一代重述一遍，可見神的話語與他們在迦南地的生活之間有很重要的聯繫。《申命記》强調要聽（認識）神的話，要把神的話行出來賓行道）。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt;教師： 鄧英善牧師&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>Chatswood Church of Christ, 365 Victoria Ave., Chatswood, NSW 2067</author>
+        <category>Training</category>
+        <comments>1407749400 to 1415615400</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081599</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>申命記 聖經信息查經班－北區日間</title>
+        <link>http://sccca.org.au/node/1066</link>
+        <description>&lt;p&gt;《申命記》是以色列人出埃及後，在曠野漂流了四十年的末期，進入迦南地前，摩西把神給他們的律法重述一遍。律法的內容與四十年前出埃及後，在西乃山所賜的律法，內容有許多相似；但聽眾卻已是不同。出埃及時二十歲以上的男性都倒斃在曠野，失去進入迦南地的福氣，因為他們不信神的應許。摩西要把神的律法向這新的一代重述一遍，可見神的話語與他們在迦南地的生活之間有很重要的聯繫。《申命記》强調要聽（認識）神的話，要把神的話行出來賓行道）。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt;教師： 鄧英善牧師&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>Chatswood Church of Christ, 365 Victoria Ave., Chatswood, NSW 2067</author>
+        <category>Training</category>
+        <comments>1407803400 to 1415669400</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081536</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>申命記 聖經信息查經班－南區</title>
+        <link>http://sccca.org.au/node/1068</link>
+        <description>&lt;p&gt;《申命記》是以色列人出埃及後，在曠野漂流了四十年的末期，進入迦南地前，摩西把神給他們的律法重述一遍。律法的內容與四十年前出埃及後，在西乃山所賜的律法，內容有許多相似；但聽眾卻已是不同。出埃及時二十歲以上的男性都倒斃在曠野，失去進入迦南地的福氣，因為他們不信神的應許。摩西要把神的律法向這新的一代重述一遍，可見神的話語與他們在迦南地的生活之間有很重要的聯繫。《申命記》强調要聽（認識）神的話，要把神的話行出來賓行道）。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt;教師： 鄧英善牧師&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>華人恩典基督教會, 1A, Kensington St., Kogarah, NSW 2217</author>
+        <category>Training</category>
+        <comments>1407835800 to 1415701800</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081648</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>申命記 聖經信息查經班－西北區日間</title>
+        <link>http://sccca.org.au/node/1069</link>
+        <description>&lt;p&gt;《申命記》是以色列人出埃及後，在曠野漂流了四十年的末期，進入迦南地前，摩西把神給他們的律法重述一遍。律法的內容與四十年前出埃及後，在西乃山所賜的律法，內容有許多相似；但聽眾卻已是不同。出埃及時二十歲以上的男性都倒斃在曠野，失去進入迦南地的福氣，因為他們不信神的應許。摩西要把神的律法向這新的一代重述一遍，可見神的話語與他們在迦南地的生活之間有很重要的聯繫。《申命記》强調要聽（認識）神的話，要把神的話行出來賓行道）。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt;教師： 鄧英善牧師&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>播道會活石堂, 5-7 Castle Hill Rd., West Pennant Hills, NSW 2125</author>
+        <category>Training</category>
+        <comments>1407889800 to 1415755800</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081917</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>申命記 聖經信息查經班－西北區夜間</title>
+        <link>http://sccca.org.au/node/1070</link>
+        <description>&lt;p&gt;《申命記》是以色列人出埃及後，在曠野漂流了四十年的末期，進入迦南地前，摩西把神給他們的律法重述一遍。律法的內容與四十年前出埃及後，在西乃山所賜的律法，內容有許多相似；但聽眾卻已是不同。出埃及時二十歲以上的男性都倒斃在曠野，失去進入迦南地的福氣，因為他們不信神的應許。摩西要把神的律法向這新的一代重述一遍，可見神的話語與他們在迦南地的生活之間有很重要的聯繫。《申命記》强調要聽（認識）神的話，要把神的話行出來賓行道）。&lt;/p&gt;
+            
+            &lt;p&gt;每周一次，共11周&lt;/p&gt;
+            
+            &lt;p&gt;教師： 鄧英善牧師&lt;/p&gt;
+            
+            &lt;p&gt;費用：材枓費AUD$10 (新學員註冊費AUD$10)&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;證書：&lt;/span&gt;&lt;span&gt;聖經信息學將會為完成每一期所指定的十個課程而又有理想出席率和有做課的學員頒發證書，以示奬勵，詳情可向本會查詢&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;查經模式&lt;/p&gt;
+            
+            &lt;ul&gt;&lt;li&gt;使用《聖經分析排版本》(Chinese Analytical Layout Bible)直接從聖經中找到經文意義的脉絡和重點&lt;/li&gt;
+            &lt;li&gt;天天查考：參加者把每週的課業問題以七天平均分配作答，以達天天查考聖經為目的&lt;/li&gt;
+            &lt;li&gt;分組交流：參加者於聚會當天在小組中分享討論預備的心得，彼此交流鼓勵&lt;/li&gt;
+            &lt;li&gt;導師講習：每次都有導師（或透過媒體）講解是次查經範圍的信息，幫助參加者更明白經文，並鼓勵大家一同實踐，學習成長&lt;/li&gt;
+            &lt;/ul&gt;&lt;p&gt;&lt;span&gt;報名手續&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;ol&gt;&lt;li&gt;電話或電郵方式向本會索取參加者守則，仔細閱讀；填妥報名表格，連同首次註冊費及材料費以郵寄方式寄往：PO Box 1779, Chatswood, NSW 2067, Australia。支票枱頭請寫：Bible Exposition Society (Australia)&lt;/li&gt;
+            &lt;li&gt;網上直接報名，開課時補填報名表格及邀交上述費用&lt;/li&gt;
+            &lt;/ol&gt;&lt;p&gt;查詢：0411 318 260, 0416 478 390, bes.aus[at]bibleexposition.org&lt;/p&gt;</description>
+        <author>澳洲華人宣道會迦南堂, 2/4 Gladstone Rd., Castle Hill, NSW 2154</author>
+        <category>Training</category>
+        <comments>1408008600 to 1415874600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1394081762</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「人生目的：我為什麼存在？」－男士守望小組</title>
+        <link>http://sccca.org.au/node/1034</link>
+        <description>&lt;p&gt;晨光男士守望小組 2014&lt;/p&gt;
+            
+            &lt;p&gt;坦誠分享、彼此支持及禱告，學習個人生命成長及更新&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;2014 專題探討: 《鏡中的男人》- 認清自己的身份&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;《鏡中的男人》作者派特前半生成功地創業，多年擔任59家公司與合資公司總裁或合夥人。他撰寫了《鏡中的男人》，分享他尋求人生意義、解決人際關係、財務、時間、性情上、誠實正直等問題的過程中怎樣與神建立更深刻關係。中國男人愛慨嘆“人在江湖，身不由己”。派特則身體力行，91年他賣掉自己的企業，建立了專門幫助事業成功的男士在職場內外，有目標，有意義地邁向成熟的福音工作。&lt;/p&gt;</description>
+        <author>7 Crown Street, Harris Park NSW</author>
+        <category>Caring, Relationship</category>
+        <comments>1408008600 to 1408017600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391637355</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「重整標竿」特別男士講座</title>
+        <link>http://sccca.org.au/node/1038</link>
+        <description>&lt;p&gt;講員：周偉文先生 Mr Raymond Chow&lt;br /&gt;
+            歡欣華人基督徒傳播中心/同路人雜誌社長&lt;br /&gt;
+            周先生開書店、辦報紙、創雜誌, 飽歷外患內憂, 受盡委曲責怪, 三數年間, 虧蝕的錢足足可以買兩間很好的房子。然而, 周先生既不擔憂, 毫無氣餒, 依然歡容自在, 更且屢戰屢勇。在這講座周先生將與你分享他的人生標竿。&lt;br /&gt;
+             &lt;/p&gt;</description>
+        <category>Relationship</category>
+        <comments>1410427800 to 1410435000</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391637865</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>悉尼恩愛夫婦營（國語）</title>
+        <link>http://sccca.org.au/node/1039</link>
+        <description>&lt;p&gt;主辦: 澳洲家庭更新協會&lt;/p&gt;
+            
+            &lt;p&gt;聯絡: (02) 9715 6923&lt;/p&gt;
+            
+            &lt;p&gt;網頁: &lt;a href=&quot;http://www.mffc.org.au&quot;&gt;http://www.mffc.org.au&lt;/a&gt;&lt;/p&gt;</description>
+        <author>Tops Conference Centre, Off Bendena Garden Rd, Stanwell Tops, 2508 </author>
+        <category>Family, Relationship</category>
+        <comments>1412380800 to 1412571600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391638759</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>悉尼恩愛夫婦營（粵語）</title>
+        <link>http://sccca.org.au/node/1041</link>
+        <description>&lt;p&gt;主辦: 澳洲家庭更新協會&lt;/p&gt;
+            
+            &lt;p&gt;聯絡: (02) 9715 6923&lt;/p&gt;
+            
+            &lt;p&gt;網頁: &lt;a href=&quot;http://www.mffc.org.au&quot;&gt;http://www.mffc.org.au&lt;/a&gt;&lt;/p&gt;</description>
+        <author>Merroo Christian Centre, 182 Mill Rd, Kurrajong 2758</author>
+        <category>Family, Relationship</category>
+        <comments>1412380800 to 1412571600</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391638734</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>「工作上心滿意足的秘訣」－男士守望小組</title>
+        <link>http://sccca.org.au/node/1035</link>
+        <description>&lt;p&gt;晨光男士守望小組 2014&lt;/p&gt;
+            
+            &lt;p&gt;坦誠分享、彼此支持及禱告，學習個人生命成長及更新&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;2014 專題探討: 《鏡中的男人》- 認清自己的身份&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;《鏡中的男人》作者派特前半生成功地創業，多年擔任59家公司與合資公司總裁或合夥人。他撰寫了《鏡中的男人》，分享他尋求人生意義、解決人際關係、財務、時間、性情上、誠實正直等問題的過程中怎樣與神建立更深刻關係。中國男人愛慨嘆“人在江湖，身不由己”。派特則身體力行，91年他賣掉自己的企業，建立了專門幫助事業成功的男士在職場內外，有目標，有意義地邁向成熟的福音工作。&lt;/p&gt;</description>
+        <author>7 Crown Street, Harris Park NSW</author>
+        <category>Work</category>
+        <comments>1412843400 to 1412852400</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391637406</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+    <!-- EVENT *********************************************************************************** -->
+    <item> <title>聖誕晚會－男士守望小組</title>
+        <link>http://sccca.org.au/node/1042</link>
+        <description>&lt;p&gt;晨光男士守望小組 2014&lt;/p&gt;
+            
+            &lt;p&gt;坦誠分享、彼此支持及禱告，學習個人生命成長及更新&lt;/p&gt;
+            
+            &lt;p&gt;&lt;span&gt;2014 專題探討: 《鏡中的男人》- 認清自己的身份&lt;/span&gt;&lt;/p&gt;
+            
+            &lt;p&gt;《鏡中的男人》作者派特前半生成功地創業，多年擔任59家公司與合資公司總裁或合夥人。他撰寫了《鏡中的男人》，分享他尋求人生意義、解決人際關係、財務、時間、性情上、誠實正直等問題的過程中怎樣與神建立更深刻關係。中國男人愛慨嘆“人在江湖，身不由己”。派特則身體力行，91年他賣掉自己的企業，建立了專門幫助事業成功的男士在職場內外，有目標，有意義地邁向成熟的福音工作。&lt;/p&gt;</description>
+        <author>7 Crown Street, Harris Park NSW</author>
+        <category>Caring, Other</category>
+        <comments>1415867400 to 1415876400</comments>
+        <guid isPermaLink="false">Yes</guid>
+        <pubDate>1391638907</pubDate>
+        <source url="http://sccca.org.au/events130315e/feed">公開聚會</source>
+    </item>
+</channel>
+</rss>
