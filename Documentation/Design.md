@@ -14,6 +14,20 @@ Info about the Android version of this app and the project in general can be fou
 
 
 
+### RSS Feeds
+
+Current production RSS feeds are retrieved from:
+
+- http://sccca.org.au/events130315e/feed
+
+This should be changed to another service at
+
+- http://sccca.org.au/rest/events130724.xml
+
+...which contains more info about host and language of the event.
+
+
+
 ### Downloading of Event info
 
 A HTTP call to retrieve event info through RSS feed is made in the initial app run. On subsequent runs, there will 
@@ -23,6 +37,59 @@ Downloading and parsing of the RSS feed (an XML file) are done using an iOS buil
 Content of XML file are saved into memory during parsing of the XML file, which happens in various call back methods 
 of NSXMLParserDelegate.
 
+- didEndElement - closing tag of an element is detected.
+- didStartElement - starting tag of an element is detected.
+
+
+
+### Event details
+
+RSS feed at http://sccca.org.au/events130315e/feed includes the following elements:
+
+- item
+    - title
+        - EventEntry.title
+    - link
+        - E.g. "http://sccca.org.au/node/1023"
+        - Link to event page of SCCCA website and contains event ID
+        - EventEntry.link
+        - EventEntry.eventId
+    - description
+        - EventEntry.eventDescription
+    - author (optional)
+        - E.g. "7 Crown Street, Harris Park NSW"
+        - This actually stores the venue info
+        - EventEntry.venue
+    - category
+        - E.g. "Caring, Relationship"
+        - EventEntry.category
+    - comments
+        - E.g. "1399541400 to 1399550400"
+        - Timestamp of start and end time of the event.
+        - EventEntry.fromTime
+        - EventEntry.toTime
+    - enclosure (optional)
+        - E.g. `<enclosure url="http://sccca.org.au/sites/default/files/mffc2014.jpg" length="157046" type="image/jpeg" />`
+        - The URL attribute of this element contains a link to event image.
+        - EventEntry.poster
+    - pubDate
+        - E.g. "1391746575"
+        - EventEntry.eventPublishedDate
+
+
+The EventEntry object includes the following properties:
+
+- eventId
+- title
+- link
+- eventDescription
+- venue
+- category
+- poster
+- isPublished
+- eventPublishedDate
+- fromTime
+- toTime
 
 
 ### Persistence Storage
