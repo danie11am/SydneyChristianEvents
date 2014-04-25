@@ -792,6 +792,8 @@
 
     EventEntry *eventEntry = [self.eventEntries objectAtIndex: indexPath.row];
 
+    //NSLog(@"eventEntry details: [%@]", eventEntry.description);
+    
     NSString *dateStr =
     [AppUtil convertToStringStartDate: eventEntry.fromTime
                                toDate: eventEntry.toTime
@@ -945,8 +947,7 @@
         [NSMutableString stringWithString: urlValue];
 
     }
-    
-    
+
 }
 
 
@@ -1210,8 +1211,8 @@
     //NSLog(@"foundCharacters(): elem: %@, [%@]",
     //      self.currentElement, string
     //      );
-    
-    
+
+
     // A resolved bug:
     //
     // For some reason, the address of the currentAuthor 0x167290 happens to be the same as
@@ -1221,7 +1222,7 @@
     //
     // This is because of copying the string by reference!
     //
-    
+
 
     if ([self.currentElement isEqualToString: @"title"])
     {
