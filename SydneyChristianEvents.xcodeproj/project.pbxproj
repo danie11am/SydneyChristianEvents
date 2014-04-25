@@ -31,6 +31,8 @@
 		64DCC836173B7F1700964C3A /* EventEntry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64DCC834173B7F1700964C3A /* EventEntry.xcdatamodeld */; };
 		AB4DCE9118FBD61C008BA0F7 /* Design.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4DCE9018FBD61C008BA0F7 /* Design.md */; };
 		ABA0FCDF18FBCF500034E220 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABA0FCDE18FBCF500034E220 /* README.md */; };
+		ABF356661907B86600794AF9 /* feed1.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABF356651907B86600794AF9 /* feed1.xml */; };
+		ABF356681907B9AD00794AF9 /* feed2.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABF356671907B9AD00794AF9 /* feed2.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		64DCC835173B7F1700964C3A /* EventEntry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventEntry.xcdatamodel; sourceTree = "<group>"; };
 		AB4DCE9018FBD61C008BA0F7 /* Design.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Design.md; path = Documentation/Design.md; sourceTree = "<group>"; };
 		ABA0FCDE18FBCF500034E220 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		ABF356651907B86600794AF9 /* feed1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = feed1.xml; path = Documentation/feed1.xml; sourceTree = "<group>"; };
+		ABF356671907B9AD00794AF9 /* feed2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = feed2.xml; path = Documentation/feed2.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				AB4DCE9018FBD61C008BA0F7 /* Design.md */,
+				ABF356651907B86600794AF9 /* feed1.xml */,
+				ABF356671907B9AD00794AF9 /* feed2.xml */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 				6498AFAF173CEB02008E4D18 /* Default.png in Resources */,
 				6498AFB0173CEB02008E4D18 /* Default@2x.png in Resources */,
 				6498AFBD173E567F008E4D18 /* PreferenceDefaults.plist in Resources */,
+				ABF356681907B9AD00794AF9 /* feed2.xml in Resources */,
 				649A0A7C1740413300C7972F /* event_details.html in Resources */,
 				6475C1491745DC9D002ED7E6 /* eventapp-icon.png in Resources */,
+				ABF356661907B86600794AF9 /* feed1.xml in Resources */,
 				AB4DCE9118FBD61C008BA0F7 /* Design.md in Resources */,
 				6475C14B1745DCA5002ED7E6 /* eventapp-icon@2x.png in Resources */,
 			);
