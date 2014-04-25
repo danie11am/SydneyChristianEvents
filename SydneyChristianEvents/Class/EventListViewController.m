@@ -1066,8 +1066,21 @@
                                           inManagedObjectContext: self.managedObjectContext
              ];
 
+            // Trim fields that contain new line characters in the end.
+            self.rssTitle = [NSMutableString stringWithString:
+                             [self.rssTitle stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+                             ];
+            self.rssLink = [NSMutableString stringWithString:
+                             [self.rssLink stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+                             ];
+            self.rssAuthor = [NSMutableString stringWithString:
+                            [self.rssAuthor stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+                            ];
+            self.rssCategory = [NSMutableString stringWithString:
+                            [self.rssCategory stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+                            ];
+
             // Set the values of the Blog Entry based on parsed attributes.
-            //
             [eventEntry setEventId: [NSNumber numberWithInt: blogId]];
             [eventEntry setTitle: self.rssTitle];
             [eventEntry setLink: self.rssLink];
