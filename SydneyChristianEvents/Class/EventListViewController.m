@@ -933,6 +933,7 @@
         self.rssCategory = [[NSMutableString alloc] init];
         self.rssComments = [[NSMutableString alloc] init];
         self.rssEnclosure = [[NSMutableString alloc] init];
+        self.rssEnclosureUrl = [[NSMutableString alloc] init];
         self.rssGuid = [[NSMutableString alloc] init];
         self.rssPubDate = [[NSMutableString alloc] init];
 
