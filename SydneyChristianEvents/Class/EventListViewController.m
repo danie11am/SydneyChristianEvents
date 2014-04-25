@@ -22,7 +22,6 @@
 @property (strong) NSMutableString *rssAuthor;
 @property (strong) NSMutableString *rssCategory;
 @property (strong) NSMutableString *rssComments;
-@property (strong) NSMutableString *rssEnclosure;
 @property (strong) NSMutableString *rssEnclosureUrl;
 @property (strong) NSMutableString *rssGuid;
 @property (strong) NSMutableString *rssPubDate;
@@ -932,7 +931,6 @@
         self.rssAuthor = [[NSMutableString alloc] init];
         self.rssCategory = [[NSMutableString alloc] init];
         self.rssComments = [[NSMutableString alloc] init];
-        self.rssEnclosure = [[NSMutableString alloc] init];
         self.rssEnclosureUrl = [[NSMutableString alloc] init];
         self.rssGuid = [[NSMutableString alloc] init];
         self.rssPubDate = [[NSMutableString alloc] init];
@@ -1276,12 +1274,6 @@
         [self.rssComments appendString: string];
 
 
-    } else if ([self.currentElement isEqualToString: @"enclosure"])
-    {
-
-        [self.rssEnclosure appendString: string];
-        
-        
     } else if ([self.currentElement isEqualToString: @"guid"])
     {
         
