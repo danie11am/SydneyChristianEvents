@@ -68,6 +68,11 @@ RSS feed at http://sccca.org.au/events130315e/feed includes the following elemen
         - Timestamp of start and end time of the event.
         - EventEntry.fromTime
         - EventEntry.toTime
+    - guid
+        - E.g. "Yes"
+        - Flag to indicate if event should be published.
+        - This is used to hide an event that has previously been published.
+        - EventEntry.isPublished
     - enclosure (optional)
         - E.g. `<enclosure url="http://sccca.org.au/sites/default/files/mffc2014.jpg" length="157046" type="image/jpeg" />`
         - The URL attribute of this element contains a link to event image.
