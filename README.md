@@ -1,10 +1,10 @@
 
+An app that provides information of events related to Chinese Christian community in Sydney.
 
-An app that provides info  that are related to Chinese Christian community in Sydney.
+Event info are retrieved from a server through a RSS feed. The info are organised by helpers for 
+SCCCA (http://www.sccca.org.au).
 
-Event info are sourced using RSS entries from a server.
-
-Bug fixing:
+Changes made in v1.1:
 
 - done - Remove the use of storyboard.
     - done - Event list screen
@@ -16,13 +16,15 @@ Bug fixing:
 - done - Toolbar is hidden in iOS6 - Use Auto Layout.
 - done - Fix bug where poster image is not mapped to the correct event.
     - Found that it's because event without image still contains images of other events.
-- Remove warning message that appears in console during run.
-- Update app icon.
+- done - Remove warning message that appears in console during run.
+    - Found that this was an Xcode bug. Error is gone after resetting simulator.
+- done - Update app icon.
 - Add Google Analytics tracking.
+- Add crash tracking - Crashlytics or others.
 
-More features:
+Todo:
 
-- The isPublished field is not sourced from the guid field of the RSS field.
+- The isPublished field is not sourced from RSS guid field, i.e. events cannot be set to hidden by server.
 - Update info of existing events on refresh.
 - Handle situation when network is unavailable / can't reach server.
 - Show location of event using in-app map view.
