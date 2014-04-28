@@ -225,48 +225,28 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 
-
-
-    //------------------------------------------------------
     // Set the selected cell to have checkmark.
-    
     UITableViewCell *newCell = [tableView cellForRowAtIndexPath:indexPath];
-    
     newCell.accessoryType = UITableViewCellAccessoryCheckmark;
 
-
-    
-    
-    //------------------------------------------------------
     // Clear the mark of the previous cell.
-
-    NSIndexPath *oldIndexPath =
-    [NSIndexPath indexPathForRow:self.selectedRow inSection:0];
-
+    NSIndexPath *oldIndexPath = [NSIndexPath indexPathForRow:self.selectedRow inSection:0];
     UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:oldIndexPath];
-
     oldCell.accessoryType = UITableViewCellAccessoryNone;
 
-
     // Remember the new selection.
-    //
     self.selectedRow = indexPath.row;
     
-
-    
     // Modify the User Defaults database.
-    //
     [[NSUserDefaults standardUserDefaults] setInteger: self.selectedRow
                                                forKey: @"savedCategory"
      ];
 
-
     // Make the change effective immediately.
-    //
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
 	[tableView deselectRowAtIndexPath:indexPath	animated:YES];
 
+    [self.navigationController popViewControllerAnimated: YES];
 }
 
 

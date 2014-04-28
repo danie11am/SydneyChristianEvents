@@ -19,6 +19,7 @@ Changes made in v1.1:
 - done - Remove warning message that appears in console during run.
     - Found that this was an Xcode bug. Error is gone after resetting simulator.
 - done - Update app icon.
+- done - In category screen, pop back to event list screen right after user taps on a category.
 - Add Google Analytics tracking.
 - Add crash tracking - Crashlytics or others.
 
