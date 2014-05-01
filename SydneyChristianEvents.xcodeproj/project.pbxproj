@@ -29,6 +29,9 @@
 		64DCC836173B7F1700964C3A /* EventEntry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64DCC834173B7F1700964C3A /* EventEntry.xcdatamodeld */; };
 		AB2BE6D7190B5C5D00D017C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2BE6D6190B5C5D00D017C1 /* Images.xcassets */; };
 		AB4DCE9118FBD61C008BA0F7 /* Design.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4DCE9018FBD61C008BA0F7 /* Design.md */; };
+		AB8736AB19126DF70060CD50 /* libFlurry_5.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8736AA19126DF70060CD50 /* libFlurry_5.0.0.a */; };
+		AB8736AD19126E610060CD50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8736AC19126E610060CD50 /* SystemConfiguration.framework */; };
+		AB8736AF19126E6E0060CD50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8736AE19126E6E0060CD50 /* Security.framework */; };
 		ABA0FCDF18FBCF500034E220 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABA0FCDE18FBCF500034E220 /* README.md */; };
 		ABF356661907B86600794AF9 /* feed1.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABF356651907B86600794AF9 /* feed1.xml */; };
 		ABF356681907B9AD00794AF9 /* feed2.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABF356671907B9AD00794AF9 /* feed2.xml */; };
@@ -68,6 +71,10 @@
 		64DCC835173B7F1700964C3A /* EventEntry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventEntry.xcdatamodel; sourceTree = "<group>"; };
 		AB2BE6D6190B5C5D00D017C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB4DCE9018FBD61C008BA0F7 /* Design.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Design.md; path = Documentation/Design.md; sourceTree = "<group>"; };
+		AB8736A919126DF70060CD50 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		AB8736AA19126DF70060CD50 /* libFlurry_5.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.0.0.a; sourceTree = "<group>"; };
+		AB8736AC19126E610060CD50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AB8736AE19126E6E0060CD50 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		ABA0FCDE18FBCF500034E220 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		ABF356651907B86600794AF9 /* feed1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = feed1.xml; path = Documentation/feed1.xml; sourceTree = "<group>"; };
 		ABF356671907B9AD00794AF9 /* feed2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = feed2.xml; path = Documentation/feed2.xml; sourceTree = "<group>"; };
@@ -78,9 +85,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8736AF19126E6E0060CD50 /* Security.framework in Frameworks */,
+				AB8736AD19126E610060CD50 /* SystemConfiguration.framework in Frameworks */,
 				64DCC833173B7EE400964C3A /* CoreData.framework in Frameworks */,
 				64DCC810173713B300964C3A /* UIKit.framework in Frameworks */,
 				64DCC812173713B300964C3A /* Foundation.framework in Frameworks */,
+				AB8736AB19126DF70060CD50 /* libFlurry_5.0.0.a in Frameworks */,
 				64DCC814173713B300964C3A /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +117,7 @@
 				AB4DCE9218FBD623008BA0F7 /* Documentation */,
 				64DCC80E173713B300964C3A /* Frameworks */,
 				64DCC80D173713B300964C3A /* Products */,
+				AB8736A819126DF70060CD50 /* Flurry */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +132,8 @@
 		64DCC80E173713B300964C3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB8736AE19126E6E0060CD50 /* Security.framework */,
+				AB8736AC19126E610060CD50 /* SystemConfiguration.framework */,
 				64DCC832173B7EE400964C3A /* CoreData.framework */,
 				64DCC80F173713B300964C3A /* UIKit.framework */,
 				64DCC811173713B300964C3A /* Foundation.framework */,
@@ -180,6 +193,16 @@
 				ABF356671907B9AD00794AF9 /* feed2.xml */,
 			);
 			name = Documentation;
+			sourceTree = "<group>";
+		};
+		AB8736A819126DF70060CD50 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				AB8736A919126DF70060CD50 /* Flurry.h */,
+				AB8736AA19126DF70060CD50 /* libFlurry_5.0.0.a */,
+			);
+			name = Flurry;
+			path = ThirdPartyLibrary/Flurry;
 			sourceTree = "<group>";
 		};
 		ABA0FCE018FBD4230034E220 /* CoreData */ = {
@@ -366,6 +389,10 @@
 				GCC_PREFIX_HEADER = "SydneyChristianEvents/SydneyChristianEvents-Prefix.pch";
 				INFOPLIST_FILE = "SydneyChristianEvents/SydneyChristianEvents-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdPartyLibrary/Flurry",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -382,6 +409,10 @@
 				GCC_PREFIX_HEADER = "SydneyChristianEvents/SydneyChristianEvents-Prefix.pch";
 				INFOPLIST_FILE = "SydneyChristianEvents/SydneyChristianEvents-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdPartyLibrary/Flurry",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
