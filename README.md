@@ -20,15 +20,17 @@ Changes made in v1.1:
     - Found that this was an Xcode bug. Error is gone after resetting simulator.
 - done - Update app icon.
 - done - In category screen, pop back to event list screen right after user taps on a category.
-- Add Google Analytics tracking.
-- Add crash tracking - Crashlytics or others.
+- Add Flurry Analytics tracking.
+- Add crash tracking 
+    - Flurry Analytics includes it.
 
 Todo:
 
+- Events from past dates are shown.
 - The isPublished field is not sourced from RSS guid field, i.e. events cannot be set to hidden by server.
 - Update info of existing events on refresh.
 - Handle situation when network is unavailable / can't reach server.
 - Show location of event using in-app map view.
 - Download and save event images.
 - Make it a universal app.
-- Use ReactiveCocoa.
+

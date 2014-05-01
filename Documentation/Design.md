@@ -106,3 +106,21 @@ Two types of persistence storage is used in this app:
     - To store the Category filter criteria
 - Core Data
     - To store event details.
+    
+    
+    
+### Tracking events
+
+This app uses Flurry Analytics to track user usage behavior. The following events are tracked
+
+- event_details_opened
+- event_details_back
+- refresh_button_tapped
+- change_category_open
+    - With "<event ID> - <event title>" as parameter
+- change_category_back_unchanged
+- change_category_back_changed
+    - With <category> as parameter
+
+
+
