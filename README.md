@@ -30,10 +30,10 @@ Changes made in v1.1:
 - done - Add crash tracking - Flurry Analytics includes it.
 - done - Define all the Flurry event strings in one place.
 - done - Make sure the app supports only iOS6 and above.
+- done - Hide events from past dates.
 
 Todo (these should become issues list in GitHub later):
 
-- Hide events from past dates.
 - The isPublished field is not sourced from RSS guid field, i.e. events cannot be set to hidden by server.
 - Update info of existing events on refresh.
 - Handle situation when network is unavailable / can't reach server.

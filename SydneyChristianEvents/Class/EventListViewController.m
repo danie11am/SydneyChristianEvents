@@ -325,13 +325,13 @@
 
     int categoryId = [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
     NSString *selectedCategory;
-    BOOL useFilter = YES;
+    BOOL useCategoryFilter = YES;
     
     switch (categoryId)
     {
         case 0:
             selectedCategory = @"All";
-            useFilter = NO;
+            useCategoryFilter = NO;
             break;
         case 1:
             selectedCategory = @"Training";
@@ -352,15 +352,17 @@
             selectedCategory = @"Relationship";
             break;
         default:
-            useFilter = NO;
+            useCategoryFilter = NO;
     }
 
     NSPredicate *predicate;
-    if (useFilter)
+    if (useCategoryFilter)
     {
-        predicate = [NSPredicate predicateWithFormat:@"category contains[c] %@", selectedCategory];
-        [request setPredicate: predicate];
+        predicate = [NSPredicate predicateWithFormat:@"(category contains[c] %@) AND (fromTime >= %@)", selectedCategory, [NSDate date]];
+    } else {
+        predicate = [NSPredicate predicateWithFormat:@"fromTime >= %@", [NSDate date]];
     }
+    [request setPredicate: predicate];
 
     //--------------------------------------------------------------------------
     // Order the events by creation date, most recent first.
