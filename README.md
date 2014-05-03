@@ -1,16 +1,29 @@
 
-An app that provides information of events related to Chinese Christian community in Sydney.
+iOS app that provides information of events related to Chinese Christian community in Sydney, available in [App Store](https://itunes.apple.com/us/app/catch-chinese-christian-events/id649820279?mt=8). This app can be run on devices with iOS 6.0 and above.
 
-Event info are retrieved from a server through a RSS feed. The info are organised by helpers for 
-SCCCA (http://www.sccca.org.au).
+Event info are retrieved from a server through a RSS feed. These info are organised by helpers for SCCCA (http://www.sccca.org.au). See Design.md in Documentation folder for more info.
 
-This app can be run on devices with iOS 6.0 and above.
+This app is not for profit and has been open-sourced as a contribution to the community. There are still lots to be done! If you are interested to help and contribute, please contact [myself](https://github.com/danie11am).
 
-See Design.md in Documentation folder for more info.
 
-### Logs
+### Todos 
 
-Changes made in v1.1:
+These should be moved to issues list in GitHub later.
+
+- The isPublished field is not sourced from RSS guid field, i.e. events cannot be set to hidden by server.
+- Use the improved RSS feed (see Design.md for more info).
+- Update info of existing events on refresh.
+- Handle situation when network is unavailable / can't reach server.
+- Show location of event using in-app map view.
+- Download and save event images.
+- Add pull-to-refresh.
+- Add first-use guide.
+- Make it a universal app.
+
+
+### Change Logs
+
+***Changes made in v1.1***
 
 - done - Remove the use of storyboard.
     - done - Event list screen
@@ -32,14 +45,12 @@ Changes made in v1.1:
 - done - Make sure the app supports only iOS6 and above.
 - done - Hide events from past dates.
 
-Todo (these should become issues list in GitHub later):
+"What's New" message displayed to public in v1.1:
 
-- The isPublished field is not sourced from RSS guid field, i.e. events cannot be set to hidden by server.
-- Update info of existing events on refresh.
-- Handle situation when network is unavailable / can't reach server.
-- Show location of event using in-app map view.
-- Download and save event images.
-- Add pull-to-refresh.
-- Add first-use guide.
-- Make it a universal app.
-- Have a better build process so that
+    Fixed major issues in app! For best results please uninstall and re-install the app.
+    - Supports iOS7!
+    - Used new logo!
+    - Fixed app crashing that happens in older devices. App now supports only iOS6 and above.
+    - Past events are no longer shown.
+    - Fixed mismatching event photo.
+
