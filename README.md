@@ -4,7 +4,11 @@ An app that provides information of events related to Chinese Christian communit
 Event info are retrieved from a server through a RSS feed. The info are organised by helpers for 
 SCCCA (http://www.sccca.org.au).
 
+This app can be run on devices with iOS 6.0 and above.
+
 See Design.md in Documentation folder for more info.
+
+### Logs
 
 Changes made in v1.1:
 
@@ -25,7 +29,7 @@ Changes made in v1.1:
 - done - Add Flurry Analytics tracking.
 - done - Add crash tracking - Flurry Analytics includes it.
 - done - Define all the Flurry event strings in one place.
-- Make sure the app supports only iOS6 and above.
+- done - Make sure the app supports only iOS6 and above.
 
 Todo (these should become issues list in GitHub later):
 
