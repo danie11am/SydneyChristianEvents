@@ -87,6 +87,18 @@
 
 
 
+- (void)didMoveToParentViewController:(UIViewController *)parent
+{
+    [super didMoveToParentViewController:parent];
+
+    // parent is nil if this view controller was removed, i.e. VC poped.
+    if (parent == nil) {
+        [AnalyticsHelper logEvent:AnalyticsHelperEventTypeChangeCategoryDismissed];
+    }
+}
+
+
+
 #pragma mark - Table view data source
 
 
@@ -250,7 +262,7 @@
                                  categoryInEnglish, @"category_english",
                                  nil
                                  ];
-    [AnalyticsHelper logEvent:AnalyticsHelperEventTypeChangeCategoryBackChanged
+    [AnalyticsHelper logEvent:AnalyticsHelperEventTypeChangeCategoryChanged
                withParameters:eventParams
      ];
 

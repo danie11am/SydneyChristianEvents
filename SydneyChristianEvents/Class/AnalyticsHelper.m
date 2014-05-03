@@ -26,12 +26,29 @@ static int const isFlurryDebugEnabled = YES;
 
     switch (eventType)
     {
+            // Event list screen.
+
+            // Tapped on an event from the list.
         case AnalyticsHelperEventTypeEventDetailsOpened: return @"event_details_opened"; break;
-        case AnalyticsHelperEventTypeEventDetailsBack: return @"event_details_back"; break;
+            
+            // Tapped on refresh button in list screen.
         case AnalyticsHelperEventTypeRefreshButtonTapped: return @"refresh_button_tapped"; break;
+
+            // Tapped on category button from toolbar.
         case AnalyticsHelperEventTypeChangeCategoryOpened: return @"change_category_opened"; break;
-        case AnalyticsHelperEventTypeChangeCategoryBackUnchanged: return @"change_category_back_unchanged"; break;
-        case AnalyticsHelperEventTypeChangeCategoryBackChanged: return @"change_category_back_changed"; break;
+            
+            // Event details screen.
+            
+            // Tapped on back button from an event details screen.
+        case AnalyticsHelperEventTypeEventDetailsDismissed: return @"event_details_dismissed"; break;
+            
+            // Category screen.
+
+            // Dismissed category selection screen by tapping on back or selected an item.
+        case AnalyticsHelperEventTypeChangeCategoryDismissed: return @"change_category_dismissed"; break;
+
+            // Tapped on a new category in category screen.
+        case AnalyticsHelperEventTypeChangeCategoryChanged: return @"change_category_changed"; break;
         default: return @"undefined_event";
     }
 }

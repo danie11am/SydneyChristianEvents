@@ -126,6 +126,18 @@
 
 
 
+- (void)didMoveToParentViewController:(UIViewController *)parent
+{
+    [super didMoveToParentViewController:parent];
+    
+    // parent is nil if this view controller was removed, i.e. VC poped.
+    if (parent == nil) {
+        [AnalyticsHelper logEvent:AnalyticsHelperEventTypeEventDetailsDismissed];
+    }
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

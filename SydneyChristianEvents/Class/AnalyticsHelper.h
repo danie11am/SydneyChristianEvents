@@ -12,11 +12,11 @@
 
 typedef enum {
     AnalyticsHelperEventTypeEventDetailsOpened = 0,
-    AnalyticsHelperEventTypeEventDetailsBack,
     AnalyticsHelperEventTypeRefreshButtonTapped,
     AnalyticsHelperEventTypeChangeCategoryOpened,
-    AnalyticsHelperEventTypeChangeCategoryBackUnchanged,
-    AnalyticsHelperEventTypeChangeCategoryBackChanged
+    AnalyticsHelperEventTypeEventDetailsDismissed,
+    AnalyticsHelperEventTypeChangeCategoryDismissed,
+    AnalyticsHelperEventTypeChangeCategoryChanged
 } AnalyticsHelperEventType;
 
 
