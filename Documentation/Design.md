@@ -13,6 +13,17 @@ Info about the Android version of this app and the project in general can be fou
 - https://bitbucket.org/xelat/sccca/wiki/Home
 
 
+### Deployment
+
+Before uploading to iTune app store, make sure that:
+
+- API key and debug variable in AnalyticsHelpers.m is set properly for production.
+
+After submitting to app store, make sure that:
+
+- API key and debug variable in AnalyticsHelpers.m is set properly for development.
+
+
 
 ### RSS Feeds
 
@@ -39,7 +50,7 @@ of NSXMLParserDelegate.
 
 - didEndElement - closing tag of an element is detected.
 - didStartElement - starting tag of an element is detected.
-
+- ... See class file for more parsing events and how they get stored using CoreData.
 
 
 ### Event details
@@ -48,7 +59,7 @@ RSS feed at http://sccca.org.au/events130315e/feed includes the following elemen
 
 - item
     - title
-        - EventEntry.title
+        - Maps to EventEntry.title
     - link
         - E.g. "http://sccca.org.au/node/1023"
         - Link to event page of SCCCA website and contains event ID
@@ -99,7 +110,7 @@ The EventEntry object includes the following properties:
 
 ### Persistence Storage
 
-Two types of persistence storage is used in this app: 
+Two types of persistence storage are used in this app:
 
 - User Defaults
     - To store the flag that indicate whether or not the app has run at least once.
@@ -111,16 +122,6 @@ Two types of persistence storage is used in this app:
     
 ### Tracking events
 
-This app uses Flurry Analytics to track user usage behavior. The following events are tracked
-
-- event_details_opened
-- event_details_back
-- refresh_button_tapped
-- change_category_open
-    - With "<event ID> - <event title>" as parameter
-- change_category_back_unchanged
-- change_category_back_changed
-    - With <category> as parameter
-
+This app uses Flurry Analytics to track user usage behavior. See AnalyticsHelpers.m for tracked event details.
 
 

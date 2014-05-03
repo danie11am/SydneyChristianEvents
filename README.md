@@ -4,6 +4,8 @@ An app that provides information of events related to Chinese Christian communit
 Event info are retrieved from a server through a RSS feed. The info are organised by helpers for 
 SCCCA (http://www.sccca.org.au).
 
+See Design.md in Documentation folder for more info.
+
 Changes made in v1.1:
 
 - done - Remove the use of storyboard.
@@ -20,17 +22,20 @@ Changes made in v1.1:
     - Found that this was an Xcode bug. Error is gone after resetting simulator.
 - done - Update app icon.
 - done - In category screen, pop back to event list screen right after user taps on a category.
-- Add Flurry Analytics tracking.
-- Add crash tracking 
-    - Flurry Analytics includes it.
+- done - Add Flurry Analytics tracking.
+- done - Add crash tracking - Flurry Analytics includes it.
+- done - Define all the Flurry event strings in one place.
+- Make sure the app supports only iOS6 and above.
 
-Todo:
+Todo (these should become issues list in GitHub later):
 
-- Events from past dates are shown.
+- Hide events from past dates.
 - The isPublished field is not sourced from RSS guid field, i.e. events cannot be set to hidden by server.
 - Update info of existing events on refresh.
 - Handle situation when network is unavailable / can't reach server.
 - Show location of event using in-app map view.
 - Download and save event images.
+- Add pull-to-refresh.
+- Add first-use guide.
 - Make it a universal app.
-
+- Have a better build process so that
