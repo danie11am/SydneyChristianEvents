@@ -279,6 +279,7 @@
  */
 - (void) pushCategoryVC
 {
+    [AnalyticsHelper logEvent:AnalyticsHelperEventTypeChangeCategoryOpened];
     CategoryVC *categoryVC = [[CategoryVC alloc] initWithStyle: UITableViewStyleGrouped];
     [self.navigationController pushViewController:categoryVC animated:YES];
 }
@@ -291,8 +292,8 @@
  */
 - (IBAction) refreshRSS
 {
-
     NSLog(@"ViewController.m: refreshRSS(): Started.");
+    [AnalyticsHelper logEvent:AnalyticsHelperEventTypeRefreshButtonTapped];
 
 
     // Show the Activity Overlay ("Loading").
@@ -309,11 +310,7 @@
                afterDelay:0.1
      ];
     
-    
-    NSString *rssFeedURL =
-    //@"http://nextstationha.blogspot.com/feeds/posts/default?alt=rss";
-    @"http://sccca.org.au/events130315e/feed";
-
+    NSString *rssFeedURL = @"http://sccca.org.au/events130315e/feed";
 
     // Get the RSS feed xml file and parse it.
     //
@@ -327,7 +324,6 @@
                withObject:rssFeedURL
                afterDelay:0.5
      ];
-
 }
 
 
@@ -819,6 +815,15 @@
     EventDetailsVC *detailsVC = [[EventDetailsVC alloc] init];
     EventEntry *event = [self.eventEntries objectAtIndex: indexPath.row];
     detailsVC.eventEntry = event;
+
+    NSDictionary *eventParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 event.eventId, @"event_id",
+                                 event.title, @"event_title",
+                                 event.category, @"event_category",
+                                 nil
+                                 ];
+    [AnalyticsHelper logEvent:AnalyticsHelperEventTypeEventDetailsOpened withParameters:eventParams];
+
 
     [self.navigationController pushViewController:detailsVC animated:YES];
     

@@ -236,12 +236,25 @@
 
     // Remember the new selection.
     self.selectedRow = indexPath.row;
-    
+
     // Modify the User Defaults database.
     [[NSUserDefaults standardUserDefaults] setInteger: self.selectedRow
                                                forKey: @"savedCategory"
      ];
 
+    // Track usage.
+    NSString *categoryInChinese = [self.categoriesInChinese objectAtIndex: self.selectedRow];
+    NSString *categoryInEnglish = [self.categories objectAtIndex: self.selectedRow];
+    NSDictionary *eventParams = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 categoryInChinese, @"category_chinese",
+                                 categoryInEnglish, @"category_english",
+                                 nil
+                                 ];
+    [AnalyticsHelper logEvent:AnalyticsHelperEventTypeChangeCategoryBackChanged
+               withParameters:eventParams
+     ];
+
+    
     // Make the change effective immediately.
     [[NSUserDefaults standardUserDefaults] synchronize];
 	[tableView deselectRowAtIndexPath:indexPath	animated:YES];

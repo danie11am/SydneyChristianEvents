@@ -6,14 +6,10 @@
 //  Copyright (c) 2013 Lamophone. All rights reserved.
 //
 
-#import "Flurry.h"
-
 #import "AppDelegate.h"
 #import "EventListViewController.h"
 
 @implementation AppDelegate
-
-NSString * const FLURRY_API_KEY = @""; // To be replaced before submitting to app store.
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -29,10 +25,7 @@ NSString * const FLURRY_API_KEY = @""; // To be replaced before submitting to ap
     //self.window.backgroundColor = [UIColor yellowColor];
 
     [self setDefaultValues];
-    
-    // iOS only allows one crash reporting tool per app; if using another, set to: NO
-    [Flurry setCrashReportingEnabled:YES];
-    [Flurry startSession:FLURRY_API_KEY]; // "Catch - dev" project
+    [AnalyticsHelper startUp];
 
     return YES;
 }

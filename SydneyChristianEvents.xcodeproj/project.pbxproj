@@ -27,6 +27,7 @@
 		64DCC81C173713B300964C3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DCC81B173713B300964C3A /* main.m */; };
 		64DCC833173B7EE400964C3A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DCC832173B7EE400964C3A /* CoreData.framework */; };
 		64DCC836173B7F1700964C3A /* EventEntry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64DCC834173B7F1700964C3A /* EventEntry.xcdatamodeld */; };
+		AB15EF7719147D8F005A3225 /* AnalyticsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15EF7619147D8F005A3225 /* AnalyticsHelper.m */; };
 		AB2BE6D7190B5C5D00D017C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2BE6D6190B5C5D00D017C1 /* Images.xcassets */; };
 		AB4DCE9118FBD61C008BA0F7 /* Design.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4DCE9018FBD61C008BA0F7 /* Design.md */; };
 		AB8736AB19126DF70060CD50 /* libFlurry_5.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8736AA19126DF70060CD50 /* libFlurry_5.0.0.a */; };
@@ -69,6 +70,8 @@
 		64DCC81D173713B300964C3A /* SydneyChristianEvents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SydneyChristianEvents-Prefix.pch"; sourceTree = "<group>"; };
 		64DCC832173B7EE400964C3A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		64DCC835173B7F1700964C3A /* EventEntry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventEntry.xcdatamodel; sourceTree = "<group>"; };
+		AB15EF7519147D8F005A3225 /* AnalyticsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnalyticsHelper.h; path = Class/AnalyticsHelper.h; sourceTree = "<group>"; };
+		AB15EF7619147D8F005A3225 /* AnalyticsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnalyticsHelper.m; path = Class/AnalyticsHelper.m; sourceTree = "<group>"; };
 		AB2BE6D6190B5C5D00D017C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB4DCE9018FBD61C008BA0F7 /* Design.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Design.md; path = Documentation/Design.md; sourceTree = "<group>"; };
 		AB8736A919126DF70060CD50 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 				6498AFA9173CEAC2008E4D18 /* ActivityIndicatorOverlayVC.m */,
 				6498AF9F173BCCE9008E4D18 /* AppUtil.h */,
 				6498AFA0173BCCE9008E4D18 /* AppUtil.m */,
+				AB15EF7519147D8F005A3225 /* AnalyticsHelper.h */,
+				AB15EF7619147D8F005A3225 /* AnalyticsHelper.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				64DCC81C173713B300964C3A /* main.m in Sources */,
 				64DCC836173B7F1700964C3A /* EventEntry.xcdatamodeld in Sources */,
 				6498AF9E173BC389008E4D18 /* EventEntryCell.m in Sources */,
+				AB15EF7719147D8F005A3225 /* AnalyticsHelper.m in Sources */,
 				6498AFA1173BCCE9008E4D18 /* AppUtil.m in Sources */,
 				6498AFB1173CEF00008E4D18 /* AppDelegate.m in Sources */,
 				6498AFB2173CEF11008E4D18 /* ActivityIndicatorOverlayVC.m in Sources */,
