@@ -57,7 +57,7 @@
      nil
      ];
 
-    int categoryId = [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
+    int categoryId = (int) [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
     self.selectedRow = categoryId;
 
 
@@ -232,7 +232,7 @@
     oldCell.accessoryType = UITableViewCellAccessoryNone;
 
     // Remember the new selection.
-    self.selectedRow = indexPath.row;
+    self.selectedRow = (int) indexPath.row;
 
     // Modify the User Defaults database.
     [[NSUserDefaults standardUserDefaults] setInteger: self.selectedRow

@@ -99,7 +99,7 @@
     // Rather, "isFirstRun" is set during first run, therefore being YES means that it's NOT the first run.
     // ...Sorry!
     //
-    int isFirstRun = [[NSUserDefaults standardUserDefaults] integerForKey: @"isFirstRun"];
+    int isFirstRun = (int) [[NSUserDefaults standardUserDefaults] integerForKey: @"isFirstRun"];
     
     if (isFirstRun == 0)
     {
@@ -323,7 +323,7 @@
     //--------------------------------------------------------------------------
     // Set filtering criteria.
 
-    int categoryId = [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
+    int categoryId = (int) [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
     NSString *selectedCategory;
     BOOL useCategoryFilter = YES;
     
@@ -735,11 +735,11 @@
 
     // Compose an error message based on the the error code.
     NSString *errorString = [NSString
-                             stringWithFormat:@"Encountered parse error %d, %@, line no %d, column no %d",
-                             [parseError code],
+                             stringWithFormat:@"Encountered parse error %d %@, line no %d, column no %d",
+                             (int) [parseError code],
                              [parseError description],
-                             [parser lineNumber],
-                             [parser columnNumber]
+                             (int) [parser lineNumber],
+                             (int) [parser columnNumber]
                              ];
     // Log the error.
     NSLog(@"Error parsing XML: %@", errorString);
@@ -753,7 +753,7 @@
     // Compose an error message based on the the error code.
     NSString *errorString = [NSString
                              stringWithFormat:@"Encountered validation error %d, %@",
-                             [validationError code],
+                             (int) [validationError code],
                              [validationError description]
                              ];
     // Log the error.
