@@ -308,7 +308,6 @@
 
 - (void) fetchDatabase
 {
-    
     // Fetch existing entries from database.
     //
     // Create a fetch request; find the EventEntry entity and assign it to the request; add a sort descriptor;
@@ -316,127 +315,76 @@
     //
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
 
-    NSEntityDescription *entity =
-    [NSEntityDescription entityForName:@"EventEntry"
-                inManagedObjectContext: self.managedObjectContext
-     ];
-
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"EventEntry"
+                                              inManagedObjectContext: self.managedObjectContext
+                                   ];
     [request setEntity:entity];
-
-
-    
     
     //--------------------------------------------------------------------------
     // Set filtering criteria.
 
-    NSPredicate *predicate;
-
-    int categoryId =
-    [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
-
+    int categoryId = [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
     NSString *selectedCategory;
-
     BOOL useFilter = YES;
     
     switch (categoryId)
     {
         case 0:
-
             selectedCategory = @"All";
-
             useFilter = NO;
-
             break;
-
         case 1:
             selectedCategory = @"Training";
             break;
-            
         case 2:
             selectedCategory = @"Youth";
             break;
-            
         case 3:
             selectedCategory = @"Mission";
             break;
-            
         case 4:
             selectedCategory = @"Revival";
             break;
-            
         case 5:
             selectedCategory = @"Family";
             break;
-            
         case 6:
             selectedCategory = @"Relationship";
             break;
-            
         default:
-
             useFilter = NO;
-
     }
-    
+
+    NSPredicate *predicate;
     if (useFilter)
     {
-        
-        predicate = [NSPredicate predicateWithFormat:
-                     @"category contains[c] %@",
-                     selectedCategory
-                     ];
-
+        predicate = [NSPredicate predicateWithFormat:@"category contains[c] %@", selectedCategory];
         [request setPredicate: predicate];
     }
-    
-    
 
     //--------------------------------------------------------------------------
     // Order the events by creation date, most recent first.
     //
-    NSSortDescriptor *sortDescriptor =
-    [[NSSortDescriptor alloc] initWithKey: @"fromTime"
-                                ascending: YES
-     ];
-    
-    NSArray *sortDescriptors = [[NSArray alloc]
-                                initWithObjects:sortDescriptor, nil];
-
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey: @"fromTime" ascending: YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     [request setSortDescriptors:sortDescriptors];
 
-
+    // Execute the fetch.
     NSError *error = nil;
+    NSArray *fetchResults = [self.managedObjectContext executeFetchRequest:request error:&error];
 
-
-    // Execute the fetch -- create a mutable copy of the result.
-    //
-    // Seems that both ways are the same.
-    //
-    //    NSMutableArray *mutableFetchResults =
-    //    [[managedObjectContext executeFetchRequest:request
-    //                                         error:&error] mutableCopy];
-    //
-    NSArray *mutableFetchResults =
-    [self.managedObjectContext executeFetchRequest:request
-                                        error:&error
-     ];
-
-    if (mutableFetchResults == nil) {
+    if (fetchResults == nil) {
 
         // Handle the error.
         NSLog(@"Error occured in ViewController.m: fetchDatabase():");
 
         if (error == nil) {
-
             NSLog(@"NSError is nil.");
-            
         } else {
-            
             NSLog(@"NSError description: %@", [error localizedDescription]);
         }
     }
-    
-    
+
     // Debugging.
     /*
      NSLog(@"ViewController.m: fetchDatabase(): result count: %i",
@@ -459,31 +407,24 @@
          NSLog(@"eventPublishedDate: %@", eventEntry.eventPublishedDate);
          NSLog(@"fromTime: %@", eventEntry.fromTime);
          NSLog(@"toTime: %@", eventEntry.toTime);
-     
      }
      */
 
-
     // Set self's events array to the mutable array, then clean up.
-    self.eventEntries =
-    [[NSMutableArray alloc] initWithArray: mutableFetchResults];
-
+    self.eventEntries = [[NSMutableArray alloc] initWithArray: fetchResults];
 }
 
 
 
 - (BOOL) doesEventAlreadyExist: (int) eventId
 {
-
     //NSLog(@"ViewController.m: doesEventAlreadyExist(): eventId %d", eventId);
 
-
-    // Fetch existing entries from database.
+   // Fetch existing entries from database.
     //
     // Create a fetch request; find the EventEntry entity and assign it to the
     // request; add a sort descriptor; then execute the fetch.
     //
-    
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     
     NSEntityDescription *entity =
@@ -493,9 +434,6 @@
     
     [request setEntity:entity];
     
-    
-    
-    
     //--------------------------------------------------------------------------
     // Set filtering criteria.
     
@@ -504,38 +442,20 @@
     
     [request setPredicate: predicate];
 
-
-
     //--------------------------------------------------------------------------
     // Execute the fetch.
     
     NSError *error = nil;
+    NSArray *fetchResults = [self.managedObjectContext executeFetchRequest:request error:&error];
     
-    
-    // Execute the fetch -- create a mutable copy of the result.
-    //
-    // Seems that both ways are the same.
-    //
-    //    NSMutableArray *mutableFetchResults =
-    //    [[managedObjectContext executeFetchRequest:request
-    //                                         error:&error] mutableCopy];
-    //
-    NSArray *mutableFetchResults =
-    [self.managedObjectContext executeFetchRequest:request
-                                             error:&error
-     ];
-    
-    if (mutableFetchResults == nil) {
+    if (fetchResults == nil) {
 
         // Handle the error.
         NSLog(@"Error occured in ViewController.m: doesEventAlreadyExist():");
         
         if (error == nil) {
-            
             NSLog(@"NSError is nil.");
-            
         } else {
-            
             NSLog(@"NSError description: %@", [error localizedDescription]);
         }
     }
@@ -569,13 +489,11 @@
     
     BOOL eventAlreadyExist = NO;
     
-    if ([mutableFetchResults count] > 0)
+    if ([fetchResults count] > 0)
     {
         //NSLog(@"ViewController.m: doesEventAlreadyExist(): event already exists.");
-
         eventAlreadyExist = YES;
     }
-
     return eventAlreadyExist;
 
 }
@@ -657,11 +575,8 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    
     _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
-
     return _managedObjectModel;
-
 }
 
 
@@ -678,19 +593,15 @@
         return _persistentStoreCoordinator;
     }
 
-    NSString *appDocDirectory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                                    NSUserDomainMask,
-                                                                    YES)[0];
+    NSString *appDocDirectory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES)[0];
 
-    NSURL *storeUrl = [NSURL fileURLWithPath:
-                       [appDocDirectory stringByAppendingPathComponent: @"sydneychristianevent.sqlite"]
-                       ];
-	
+    NSURL *storeUrl =
+    [NSURL fileURLWithPath:[appDocDirectory stringByAppendingPathComponent: @"sydneychristianevent.sqlite"]];
+
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:
+                                   [self managedObjectModel]
+                                   ];
 	NSError *error;
-
-    _persistentStoreCoordinator =
-    [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
-
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                   configuration:nil
                                                             URL:storeUrl
