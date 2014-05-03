@@ -1086,7 +1086,7 @@
             // Entry already exists so update if needed.
 
             // Debugging.
-            NSLog(@"ViewController.m: didEndElement(): Existing entry found.");
+            //NSLog(@"ViewController.m: didEndElement(): Existing entry found.");
             
             
             // Pack new content into one object.
