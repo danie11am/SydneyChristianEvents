@@ -11,7 +11,6 @@
 @class EventEntry, ActivityIndicatorOverlayVC;
 
 /**
-
  Main screen of the app.
  
  - Show the events in a list format using table view.

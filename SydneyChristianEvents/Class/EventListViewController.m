@@ -128,7 +128,7 @@
     [self.tableview reloadData];
 
     // "Deselect" the row, otherwise the cell will remain highlighted.
-    [self.tableview deselectRowAtIndexPath: [self.tableview indexPathForSelectedRow]
+    [self.tableview deselectRowAtIndexPath:[self.tableview indexPathForSelectedRow]
                                   animated:YES
      ];
 
@@ -231,31 +231,10 @@
 
 - (void) parseXMLFileAtURL: (NSString *) inputURL
 {
-
-    NSLog(@"ViewController.m: parseXMLFileAtURL(): Started.");
-    
-
-
-//    NSString *myRequestString =
-//    [NSString stringWithFormat:@"http://abc.com/def/webservices/aa.php?family_id=%d",self.passFamilyId];
-    
-    //NSLog(@"Requested Service = %@",myRequestString);
-
-//    NSMutableURLRequest *request =
-//    [[NSMutableURLRequest alloc] initWithURL:
-//     [NSURL URLWithString: inputURL]
-//     ];
-//
-//    [request setHTTPMethod: @"POST" ];
-//
-//    NSData *downloadedData =
-//    [ NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-
-    
+    //NSLog(@"ViewController.m: parseXMLFileAtURL(): Started.");
     
     // Convert URL from NSString* to NSURL.
     NSURL *nsURL = [NSURL URLWithString:inputURL];
-    //NSURL *nsURL = [NSURL fileURLWithPath:inputURL];
     
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL: nsURL];
     [xmlParser setDelegate: self];
@@ -268,7 +247,6 @@
 
     // Get the XML file and parse the content.
     [xmlParser parse];
-    
 }
 
 
@@ -610,7 +588,6 @@
 
 - (void) hideLoadingSign
 {
-
     [self.activityOverlayVC.view removeFromSuperview];
 
 }
@@ -619,8 +596,6 @@
 
 - (void) showLoadingSign
 {
-    
-    
     // Create the Activity Indicator if it was not already created.
     if (self.activityOverlayVC == NULL) {
         
@@ -628,7 +603,6 @@
                                   initWithFrame: self.view.superview.bounds
                                   ];
     }
-    
     
     // Add the view on top of current view.
     //
@@ -654,7 +628,6 @@
  */
 - (NSManagedObjectContext *) managedObjectContext
 {
-	
     if (_managedObjectContext != nil) {
         return _managedObjectContext;
     }
@@ -681,7 +654,6 @@
  */
 - (NSManagedObjectModel *) managedObjectModel
 {
-
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
@@ -701,33 +673,23 @@
  */
 - (NSPersistentStoreCoordinator *) persistentStoreCoordinator
 {
-
-
     if (_persistentStoreCoordinator != nil)
     {
         return _persistentStoreCoordinator;
     }
 
-    NSString *appDocDirectory =
-    NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                        NSUserDomainMask,
-                                        YES)
-    [0];
+    NSString *appDocDirectory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                                    NSUserDomainMask,
+                                                                    YES)[0];
 
-
-    NSURL *storeUrl =
-    [NSURL fileURLWithPath:
-     [appDocDirectory //@""//[self applicationDocumentsDirectory]
-      stringByAppendingPathComponent: @"sydneychristianevent.sqlite"
-      ]
-     ];
+    NSURL *storeUrl = [NSURL fileURLWithPath:
+                       [appDocDirectory stringByAppendingPathComponent: @"sydneychristianevent.sqlite"]
+                       ];
 	
 	NSError *error;
 
-    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
-                                  initWithManagedObjectModel:
-                                  [self managedObjectModel]];
-
+    _persistentStoreCoordinator =
+    [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
 
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                   configuration:nil
@@ -737,7 +699,6 @@
     {
         // Handle the error.
         NSLog(@"ViewController.m: persistentStoreCoordinator(): Error! ");
-
     }
     
     return _persistentStoreCoordinator;
@@ -768,14 +729,10 @@
 - (UITableViewCell *)tableView: (UITableView *)tableView
          cellForRowAtIndexPath: (NSIndexPath *)indexPath
 {
-
     //NSLog(@"ViewController.m: cellForRowAtIndexPath(): started.");
-    
     NSString *cellIdentifier = @"EventCell";
 
-
     EventEntryCell *cell = [tableView dequeueReusableCellWithIdentifier: cellIdentifier];
-
 
     if (cell == nil) {
 
@@ -786,7 +743,6 @@
     }
 
     EventEntry *eventEntry = [self.eventEntries objectAtIndex: indexPath.row];
-
     //NSLog(@"eventEntry details: [%@]", eventEntry.description);
     
     NSString *dateStr =
@@ -824,9 +780,7 @@
                                  ];
     [AnalyticsHelper logEvent:AnalyticsHelperEventTypeEventDetailsOpened withParameters:eventParams];
 
-
     [self.navigationController pushViewController:detailsVC animated:YES];
-    
 }
 
 
@@ -846,7 +800,6 @@
 - (void)        parser:(NSXMLParser *)parser
     parseErrorOccurred:(NSError *)parseError
 {
-
     // 2013-05-12 00:15
     //
     // There was an odd issue where, when the internet connection of the device
@@ -867,7 +820,6 @@
     // Then tried again without Charlex Web Proxy, this error still cannot
     // be reproduced.
 
-
     // Compose an error message based on the the error code.
     NSString *errorString = [NSString
                              stringWithFormat:@"Encountered parse error %d, %@, line no %d, column no %d",
@@ -876,25 +828,21 @@
                              [parser lineNumber],
                              [parser columnNumber]
                              ];
-
     // Log the error.
     NSLog(@"Error parsing XML: %@", errorString);
-
 }
 
 
 
-- (void)        parser:(NSXMLParser *)parser
-    validationErrorOccurred:(NSError *)validationError
+- (void)           parser:(NSXMLParser *)parser
+  validationErrorOccurred:(NSError *)validationError
 {
-    
     // Compose an error message based on the the error code.
     NSString *errorString = [NSString
                              stringWithFormat:@"Encountered validation error %d, %@",
                              [validationError code],
                              [validationError description]
                              ];
-    
     // Log the error.
     NSLog(@"Error validating XML: %@", errorString);
 }

@@ -9,23 +9,21 @@
 #import <UIKit/UIKit.h>
 
 /**
+ Shows a list of event category options for user to filter event list entries.
+ Categories are hardcoded in this class file and are supposed to match the event details in server:
  
- Categories of events include:
- 
- All
- Training
- Youth
- Mission
- Revival
- Family
- Relationship
-
+ - All
+ - Training
+ - Youth
+ - Mission
+ - Revival
+ - Family
+ - Relationship
  */
- 
 @interface CategoryVC : UITableViewController
 
 @property int selectedRow;
-@property (strong) NSMutableArray *categories;
+@property (strong) NSMutableArray *categoriesInEnglish;
 @property (strong) NSMutableArray *categoriesInChinese;
 
 

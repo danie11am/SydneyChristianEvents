@@ -21,11 +21,7 @@
     self = [super initWithStyle:style];
 
     if (self) {
-
-        // Custom initialization
-
-        NSLog(@"CategoryVC.m: initWithStyle(): started.");
-        
+        //NSLog(@"CategoryVC.m: initWithStyle(): started.");
     }
     return self;
 }
@@ -34,14 +30,10 @@
 
 - (void)viewDidLoad
 {
-
     [super viewDidLoad];
+    //NSLog(@"CategoryVC.m: viewDidLoad(): started.");
 
-    NSLog(@"CategoryVC.m: viewDidLoad(): started.");
-
-
-
-    self.categories =
+    self.categoriesInEnglish =
     [NSMutableArray arrayWithObjects:
      @"All",
      @"Training",
@@ -65,7 +57,6 @@
      nil
      ];
 
-    
     int categoryId = [[NSUserDefaults standardUserDefaults] integerForKey: @"savedCategory"];
     self.selectedRow = categoryId;
 
@@ -134,7 +125,6 @@
          cellForRowAtIndexPath: (NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"CategoryCell";
-
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
 
     // Configure the cell...
@@ -149,25 +139,20 @@
         
         // Row should not be selectable. Actions go through buttons.
         //cell.selectionStyle = UITableViewCellSelectionStyleNone;
-
     }
-
 
 	// Check if this cell needs to be marked.
 	if (indexPath.row == self.selectedRow)
     {
 		// Set the cell to have checkmark.
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
-
-	} else
-    {
+	} else {
 		// Set the cell to CLEAR checkmark.
 		cell.accessoryType = UITableViewCellAccessoryNone;
 	}
 
     NSString *categoryInChinese = [self.categoriesInChinese objectAtIndex: indexPath.row];
     cell.textLabel.text = categoryInChinese;
-
 
     return cell;
 
@@ -256,7 +241,7 @@
 
     // Track usage.
     NSString *categoryInChinese = [self.categoriesInChinese objectAtIndex: self.selectedRow];
-    NSString *categoryInEnglish = [self.categories objectAtIndex: self.selectedRow];
+    NSString *categoryInEnglish = [self.categoriesInEnglish objectAtIndex: self.selectedRow];
     NSDictionary *eventParams = [NSDictionary dictionaryWithObjectsAndKeys:
                                  categoryInChinese, @"category_chinese",
                                  categoryInEnglish, @"category_english",

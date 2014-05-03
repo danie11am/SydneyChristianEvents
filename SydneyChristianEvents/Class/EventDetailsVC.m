@@ -111,7 +111,7 @@
     self.eventWebView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview: self.eventWebView];
 
-    
+
     // Pass the string to the web view.
     [self.eventWebView loadHTMLString: textFileContent
                               baseURL: baseURL
