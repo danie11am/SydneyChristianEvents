@@ -30,7 +30,7 @@
 		AB15EF7719147D8F005A3225 /* AnalyticsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15EF7619147D8F005A3225 /* AnalyticsHelper.m */; };
 		AB2BE6D7190B5C5D00D017C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2BE6D6190B5C5D00D017C1 /* Images.xcassets */; };
 		AB4DCE9118FBD61C008BA0F7 /* Design.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4DCE9018FBD61C008BA0F7 /* Design.md */; };
-		AB52DED619162A1500B78BD2 /* ChangeLogs.md in Resources */ = {isa = PBXBuildFile; fileRef = AB52DED519162A1500B78BD2 /* ChangeLogs.md */; };
+		AB635C0F191DF5C800898698 /* ChangeLogs.md in Resources */ = {isa = PBXBuildFile; fileRef = AB635C0E191DF5C800898698 /* ChangeLogs.md */; };
 		AB8736AB19126DF70060CD50 /* libFlurry_5.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8736AA19126DF70060CD50 /* libFlurry_5.0.0.a */; };
 		AB8736AD19126E610060CD50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8736AC19126E610060CD50 /* SystemConfiguration.framework */; };
 		AB8736AF19126E6E0060CD50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8736AE19126E6E0060CD50 /* Security.framework */; };
@@ -75,7 +75,7 @@
 		AB15EF7619147D8F005A3225 /* AnalyticsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnalyticsHelper.m; path = Class/AnalyticsHelper.m; sourceTree = "<group>"; };
 		AB2BE6D6190B5C5D00D017C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AB4DCE9018FBD61C008BA0F7 /* Design.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Design.md; path = Documentation/Design.md; sourceTree = "<group>"; };
-		AB52DED519162A1500B78BD2 /* ChangeLogs.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ChangeLogs.md; path = SydneyChristianEvents/ChangeLogs.md; sourceTree = "<group>"; };
+		AB635C0E191DF5C800898698 /* ChangeLogs.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ChangeLogs.md; path = Documentation/ChangeLogs.md; sourceTree = "<group>"; };
 		AB8736A919126DF70060CD50 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		AB8736AA19126DF70060CD50 /* libFlurry_5.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.0.0.a; sourceTree = "<group>"; };
 		AB8736AC19126E610060CD50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -193,8 +193,8 @@
 		AB4DCE9218FBD623008BA0F7 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
+				AB635C0E191DF5C800898698 /* ChangeLogs.md */,
 				AB4DCE9018FBD61C008BA0F7 /* Design.md */,
-				AB52DED519162A1500B78BD2 /* ChangeLogs.md */,
 				ABF356651907B86600794AF9 /* feed1.xml */,
 				ABF356671907B9AD00794AF9 /* feed2.xml */,
 			);
@@ -300,7 +300,7 @@
 				649A0A7C1740413300C7972F /* event_details.html in Resources */,
 				ABF356661907B86600794AF9 /* feed1.xml in Resources */,
 				AB4DCE9118FBD61C008BA0F7 /* Design.md in Resources */,
-				AB52DED619162A1500B78BD2 /* ChangeLogs.md in Resources */,
+				AB635C0F191DF5C800898698 /* ChangeLogs.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
