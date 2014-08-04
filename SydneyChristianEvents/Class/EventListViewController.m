@@ -13,6 +13,7 @@
 #import "AppUtil.h"
 #import "ActivityIndicatorOverlayVC.h"
 #import "CategoryVC.h"
+#import "FeedbackViewController.h"
 
 @interface EventListViewController ()
 
@@ -65,21 +66,27 @@
     self.toolbar = [[UIToolbar alloc] initWithFrame: CGRectZero];
     self.toolbar.translatesAutoresizingMaskIntoConstraints = NO;
     NSMutableArray *toolbarItems = [[NSMutableArray alloc] init];
-    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
-                                                                                 target:self
-                                                                                 action:@selector(refreshRSS)
-                                    ];
     UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                                    target:nil
                                                                                    action:nil
                                       ];
-    UIBarButtonItem *filterItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+    UIBarButtonItem *iconRefresh = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+                                                                                 target:self
+                                                                                 action:@selector(refreshRSS)
+                                    ];
+    UIBarButtonItem *iconFilter = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
                                                                                 target:self
                                                                                 action:@selector(pushCategoryVC)
                                    ];
-    [toolbarItems addObject: refreshItem];
+    UIBarButtonItem *iconCompose = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
+                                                                                target:self
+                                                                                action:@selector(pushFeedbackVC)
+                                   ];
+    [toolbarItems addObject: iconRefresh];
     [toolbarItems addObject: flexibleSpace];
-    [toolbarItems addObject: filterItem];
+    [toolbarItems addObject: iconCompose];
+    [toolbarItems addObject: flexibleSpace];
+    [toolbarItems addObject: iconFilter];
     [self.toolbar setItems: toolbarItems];
     [self.view addSubview:self.toolbar];
     
@@ -262,6 +269,15 @@
     [self.navigationController pushViewController:categoryVC animated:YES];
 }
 
+/**
+ Show the feedback screen.
+ Called when user tap on the feedback icon.
+ */
+- (void) pushFeedbackVC
+{
+    FeedbackViewController *feedbackVC = [[FeedbackViewController alloc] init];
+    [self.navigationController pushViewController:feedbackVC animated:YES];
+}
 
 
 /** 

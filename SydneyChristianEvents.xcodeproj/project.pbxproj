@@ -35,6 +35,7 @@
 		AB8736AD19126E610060CD50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8736AC19126E610060CD50 /* SystemConfiguration.framework */; };
 		AB8736AF19126E6E0060CD50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8736AE19126E6E0060CD50 /* Security.framework */; };
 		ABA0FCDF18FBCF500034E220 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABA0FCDE18FBCF500034E220 /* README.md */; };
+		ABC8C9A9198F25CF00C84040 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC8C9A8198F25CF00C84040 /* FeedbackViewController.m */; };
 		ABF356661907B86600794AF9 /* feed1.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABF356651907B86600794AF9 /* feed1.xml */; };
 		ABF356681907B9AD00794AF9 /* feed2.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABF356671907B9AD00794AF9 /* feed2.xml */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,8 @@
 		AB8736AC19126E610060CD50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AB8736AE19126E6E0060CD50 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		ABA0FCDE18FBCF500034E220 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		ABC8C9A7198F25CF00C84040 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedbackViewController.h; path = Class/FeedbackViewController.h; sourceTree = "<group>"; };
+		ABC8C9A8198F25CF00C84040 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedbackViewController.m; path = Class/FeedbackViewController.m; sourceTree = "<group>"; };
 		ABF356651907B86600794AF9 /* feed1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = feed1.xml; path = Documentation/feed1.xml; sourceTree = "<group>"; };
 		ABF356671907B9AD00794AF9 /* feed2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = feed2.xml; path = Documentation/feed2.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +189,8 @@
 				6498AFB7173D0893008E4D18 /* EventDetailsVC.m */,
 				6498AFB9173DFB38008E4D18 /* CategoryVC.h */,
 				6498AFBA173DFB38008E4D18 /* CategoryVC.m */,
+				ABC8C9A7198F25CF00C84040 /* FeedbackViewController.h */,
+				ABC8C9A8198F25CF00C84040 /* FeedbackViewController.m */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 				6498AFB4173CEF26008E4D18 /* EventListViewController.m in Sources */,
 				6498AFB8173D0894008E4D18 /* EventDetailsVC.m in Sources */,
 				6498AFBB173DFB38008E4D18 /* CategoryVC.m in Sources */,
+				ABC8C9A9198F25CF00C84040 /* FeedbackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
